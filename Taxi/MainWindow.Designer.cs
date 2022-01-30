@@ -36,10 +36,13 @@
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.dataTab = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.carTab = new System.Windows.Forms.TabPage();
             this.companyTab = new System.Windows.Forms.TabPage();
             this.panelButtons.SuspendLayout();
             this.materialTabControl1.SuspendLayout();
+            this.dataTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelButtons
@@ -158,12 +161,28 @@
             // 
             // dataTab
             // 
+            this.dataTab.Controls.Add(this.dataGridView1);
             this.dataTab.Location = new System.Drawing.Point(4, 24);
             this.dataTab.Name = "dataTab";
             this.dataTab.Size = new System.Drawing.Size(1065, 499);
             this.dataTab.TabIndex = 0;
             this.dataTab.Text = "dataTab";
             this.dataTab.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(1065, 499);
+            this.dataGridView1.TabIndex = 0;
             // 
             // carTab
             // 
@@ -197,6 +216,8 @@
             this.panelButtons.ResumeLayout(false);
             this.panelButtons.PerformLayout();
             this.materialTabControl1.ResumeLayout(false);
+            this.dataTab.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,5 +234,6 @@
         private TabPage dataTab;
         private TabPage carTab;
         private TabPage companyTab;
+        private DataGridView dataGridView1;
     }
 }
