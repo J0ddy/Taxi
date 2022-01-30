@@ -12,7 +12,8 @@ namespace Taxi
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Yellow600, Primary.BlueGrey900, Primary.Yellow500, Accent.LightBlue200, TextShade.WHITE);
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Yellow600, Primary.BlueGrey900, Primary.Yellow500,
+                Accent.LightBlue200, TextShade.WHITE);
         }
 
         private void MainWindow_Load(object sender, EventArgs e)
@@ -24,4 +25,5 @@ namespace Taxi
         {
             tabControlMain.SelectedTab = carTab;
         }
+    }
 }
