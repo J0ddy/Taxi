@@ -34,9 +34,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1072, 650);
+            this.MinimumSize = new System.Drawing.Size(1072, 650);
             this.Name = "MainWindow";
             this.Text = "Taxi";
+            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.ResumeLayout(false);
 
         }
