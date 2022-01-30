@@ -34,7 +34,12 @@
             this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.dataTab = new System.Windows.Forms.TabPage();
+            this.carTab = new System.Windows.Forms.TabPage();
+            this.companyTab = new System.Windows.Forms.TabPage();
             this.panelButtons.SuspendLayout();
+            this.materialTabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelButtons
@@ -134,11 +139,56 @@
             this.materialButton2.UseAccentColor = true;
             this.materialButton2.UseVisualStyleBackColor = true;
             // 
+            // materialTabControl1
+            // 
+            this.materialTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.materialTabControl1.Controls.Add(this.dataTab);
+            this.materialTabControl1.Controls.Add(this.carTab);
+            this.materialTabControl1.Controls.Add(this.companyTab);
+            this.materialTabControl1.Depth = 0;
+            this.materialTabControl1.Location = new System.Drawing.Point(0, 117);
+            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabControl1.Multiline = true;
+            this.materialTabControl1.Name = "materialTabControl1";
+            this.materialTabControl1.SelectedIndex = 0;
+            this.materialTabControl1.Size = new System.Drawing.Size(1073, 527);
+            this.materialTabControl1.TabIndex = 3;
+            // 
+            // dataTab
+            // 
+            this.dataTab.Location = new System.Drawing.Point(4, 24);
+            this.dataTab.Name = "dataTab";
+            this.dataTab.Size = new System.Drawing.Size(1065, 499);
+            this.dataTab.TabIndex = 0;
+            this.dataTab.Text = "dataTab";
+            this.dataTab.UseVisualStyleBackColor = true;
+            // 
+            // carTab
+            // 
+            this.carTab.Location = new System.Drawing.Point(4, 24);
+            this.carTab.Name = "carTab";
+            this.carTab.Size = new System.Drawing.Size(1065, 499);
+            this.carTab.TabIndex = 1;
+            this.carTab.Text = "carTab";
+            this.carTab.UseVisualStyleBackColor = true;
+            // 
+            // companyTab
+            // 
+            this.companyTab.Location = new System.Drawing.Point(4, 24);
+            this.companyTab.Name = "companyTab";
+            this.companyTab.Size = new System.Drawing.Size(1065, 499);
+            this.companyTab.TabIndex = 2;
+            this.companyTab.Text = "companyTab";
+            this.companyTab.UseVisualStyleBackColor = true;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1072, 650);
+            this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.panelButtons);
             this.MinimumSize = new System.Drawing.Size(1072, 650);
             this.Name = "MainWindow";
@@ -146,6 +196,7 @@
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.panelButtons.ResumeLayout(false);
             this.panelButtons.PerformLayout();
+            this.materialTabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -158,5 +209,9 @@
         private MaterialSkin.Controls.MaterialButton materialButton4;
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
+        private TabPage dataTab;
+        private TabPage carTab;
+        private TabPage companyTab;
     }
 }
