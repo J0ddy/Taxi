@@ -40,6 +40,23 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.carTab = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblCompanyName = new System.Windows.Forms.Label();
+            this.pbCarImage = new System.Windows.Forms.PictureBox();
             this.companyTab = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -58,23 +75,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblCompanyName = new System.Windows.Forms.Label();
             this.pbCompanyImage = new System.Windows.Forms.PictureBox();
             this.panelButtons.SuspendLayout();
             this.tabControlMain.SuspendLayout();
@@ -82,15 +82,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.carTab.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarImage)).BeginInit();
             this.companyTab.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCompanyImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -287,216 +287,11 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblCompanyName);
-            this.panel1.Controls.Add(this.pbCompanyImage);
+            this.panel1.Controls.Add(this.pbCarImage);
             this.panel1.Location = new System.Drawing.Point(161, 49);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(743, 400);
             this.panel1.TabIndex = 16;
-            // 
-            // companyTab
-            // 
-            this.companyTab.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.companyTab.Controls.Add(this.panel2);
-            this.companyTab.Location = new System.Drawing.Point(4, 24);
-            this.companyTab.Name = "companyTab";
-            this.companyTab.Size = new System.Drawing.Size(1065, 499);
-            this.companyTab.TabIndex = 2;
-            this.companyTab.Text = "companyTab";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.label24);
-            this.panel2.Controls.Add(this.label25);
-            this.panel2.Controls.Add(this.pictureBox7);
-            this.panel2.Location = new System.Drawing.Point(161, 49);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(743, 400);
-            this.panel2.TabIndex = 49;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Taxi.Properties.Resources.taxi_subtract_48;
-            this.pictureBox4.Location = new System.Drawing.Point(50, 314);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 64;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Taxi.Properties.Resources.taxi_addition_48;
-            this.pictureBox5.Location = new System.Drawing.Point(50, 258);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 63;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Taxi.Properties.Resources.taxi_counter_48;
-            this.pictureBox6.Location = new System.Drawing.Point(50, 206);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 62;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(284, 139);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 18);
-            this.label1.TabIndex = 61;
-            this.label1.Text = "{company_phone_number}";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(285, 113);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(144, 18);
-            this.label14.TabIndex = 60;
-            this.label14.Text = "{company_cars:N0}";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(285, 87);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(190, 18);
-            this.label15.TabIndex = 59;
-            this.label15.Text = "{company_employees:N0}";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(193, 263);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(180, 22);
-            this.label16.TabIndex = 58;
-            this.label16.Text = "{total_expenses:N1}";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(88, 263);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(95, 22);
-            this.label17.TabIndex = 57;
-            this.label17.Text = "Приходи: ";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(193, 320);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(205, 22);
-            this.label18.TabIndex = 56;
-            this.label18.Text = "{total_expenses:N1} лв";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.Location = new System.Drawing.Point(88, 320);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(92, 22);
-            this.label19.TabIndex = 55;
-            this.label19.Text = "Разходи: ";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(193, 210);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(122, 22);
-            this.label20.TabIndex = 54;
-            this.label20.Text = "{total_km:N0}";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(88, 210);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(102, 22);
-            this.label21.TabIndex = 53;
-            this.label21.Text = "Общо КМ: ";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(195, 139);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(79, 18);
-            this.label22.TabIndex = 52;
-            this.label22.Text = "Телефон: ";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(195, 113);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(50, 18);
-            this.label23.TabIndex = 51;
-            this.label23.Text = "Коли: ";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(195, 87);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(92, 18);
-            this.label24.TabIndex = 50;
-            this.label24.Text = "Служители: ";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label25.Location = new System.Drawing.Point(195, 54);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(171, 24);
-            this.label25.TabIndex = 49;
-            this.label25.Text = "{company_name}";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.ErrorImage = global::Taxi.Properties.Resources.taxi_96;
-            this.pictureBox7.InitialImage = global::Taxi.Properties.Resources.taxi_96;
-            this.pictureBox7.Location = new System.Drawing.Point(51, 54);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(128, 121);
-            this.pictureBox7.TabIndex = 48;
-            this.pictureBox7.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -658,6 +453,211 @@
             this.lblCompanyName.TabIndex = 32;
             this.lblCompanyName.Text = "Такси";
             // 
+            // pbCarImage
+            // 
+            this.pbCarImage.ErrorImage = global::Taxi.Properties.Resources.taxi_96;
+            this.pbCarImage.InitialImage = global::Taxi.Properties.Resources.taxi_96;
+            this.pbCarImage.Location = new System.Drawing.Point(51, 54);
+            this.pbCarImage.Name = "pbCarImage";
+            this.pbCarImage.Size = new System.Drawing.Size(128, 121);
+            this.pbCarImage.TabIndex = 31;
+            this.pbCarImage.TabStop = false;
+            // 
+            // companyTab
+            // 
+            this.companyTab.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.companyTab.Controls.Add(this.panel2);
+            this.companyTab.Location = new System.Drawing.Point(4, 24);
+            this.companyTab.Name = "companyTab";
+            this.companyTab.Size = new System.Drawing.Size(1065, 499);
+            this.companyTab.TabIndex = 2;
+            this.companyTab.Text = "companyTab";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Controls.Add(this.pictureBox5);
+            this.panel2.Controls.Add(this.pictureBox6);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.label17);
+            this.panel2.Controls.Add(this.label18);
+            this.panel2.Controls.Add(this.label19);
+            this.panel2.Controls.Add(this.label20);
+            this.panel2.Controls.Add(this.label21);
+            this.panel2.Controls.Add(this.label22);
+            this.panel2.Controls.Add(this.label23);
+            this.panel2.Controls.Add(this.label24);
+            this.panel2.Controls.Add(this.label25);
+            this.panel2.Controls.Add(this.pbCompanyImage);
+            this.panel2.Location = new System.Drawing.Point(161, 49);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(743, 400);
+            this.panel2.TabIndex = 49;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Taxi.Properties.Resources.taxi_subtract_48;
+            this.pictureBox4.Location = new System.Drawing.Point(50, 314);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 64;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Taxi.Properties.Resources.taxi_addition_48;
+            this.pictureBox5.Location = new System.Drawing.Point(50, 258);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 63;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Taxi.Properties.Resources.taxi_counter_48;
+            this.pictureBox6.Location = new System.Drawing.Point(50, 206);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 62;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(284, 139);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(194, 18);
+            this.label1.TabIndex = 61;
+            this.label1.Text = "{company_phone_number}";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label14.Location = new System.Drawing.Point(285, 113);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(144, 18);
+            this.label14.TabIndex = 60;
+            this.label14.Text = "{company_cars:N0}";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(285, 87);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(190, 18);
+            this.label15.TabIndex = 59;
+            this.label15.Text = "{company_employees:N0}";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(193, 263);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(268, 22);
+            this.label16.TabIndex = 58;
+            this.label16.Text = "{company_total_expenses:N1}";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.Location = new System.Drawing.Point(88, 263);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(95, 22);
+            this.label17.TabIndex = 57;
+            this.label17.Text = "Приходи: ";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(193, 320);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(293, 22);
+            this.label18.TabIndex = 56;
+            this.label18.Text = "{company_total_expenses:N1} лв";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label19.Location = new System.Drawing.Point(88, 320);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(92, 22);
+            this.label19.TabIndex = 55;
+            this.label19.Text = "Разходи: ";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label20.Location = new System.Drawing.Point(193, 210);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(210, 22);
+            this.label20.TabIndex = 54;
+            this.label20.Text = "{company_total_km:N0}";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label21.Location = new System.Drawing.Point(88, 210);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(102, 22);
+            this.label21.TabIndex = 53;
+            this.label21.Text = "Общо КМ: ";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label22.Location = new System.Drawing.Point(195, 139);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(79, 18);
+            this.label22.TabIndex = 52;
+            this.label22.Text = "Телефон: ";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label23.Location = new System.Drawing.Point(195, 113);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(50, 18);
+            this.label23.TabIndex = 51;
+            this.label23.Text = "Коли: ";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label24.Location = new System.Drawing.Point(195, 87);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(92, 18);
+            this.label24.TabIndex = 50;
+            this.label24.Text = "Служители: ";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label25.Location = new System.Drawing.Point(195, 54);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(171, 24);
+            this.label25.TabIndex = 49;
+            this.label25.Text = "{company_name}";
+            // 
             // pbCompanyImage
             // 
             this.pbCompanyImage.ErrorImage = global::Taxi.Properties.Resources.taxi_96;
@@ -665,7 +665,7 @@
             this.pbCompanyImage.Location = new System.Drawing.Point(51, 54);
             this.pbCompanyImage.Name = "pbCompanyImage";
             this.pbCompanyImage.Size = new System.Drawing.Size(128, 121);
-            this.pbCompanyImage.TabIndex = 31;
+            this.pbCompanyImage.TabIndex = 48;
             this.pbCompanyImage.TabStop = false;
             // 
             // MainWindow
@@ -687,16 +687,16 @@
             this.carTab.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarImage)).EndInit();
             this.companyTab.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCompanyImage)).EndInit();
             this.ResumeLayout(false);
 
@@ -733,7 +733,7 @@
         private Label label23;
         private Label label24;
         private Label label25;
-        private PictureBox pictureBox7;
+        private PictureBox pbCarImage;
         private Panel panel1;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;

@@ -14,6 +14,8 @@ namespace Taxi
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Yellow600, Primary.BlueGrey900, Primary.Yellow500,
                 Accent.LightBlue200, TextShade.WHITE);
+            pbCarImage.Image ??= pbCarImage.ErrorImage;
+            pbCompanyImage.Image ??= pbCompanyImage.ErrorImage;
         }
 
         private void MainWindow_Load(object sender, EventArgs e)
@@ -37,6 +39,5 @@ namespace Taxi
             tabControlMain.SelectedTab = companyTab;
         }
         #endregion
-        
     }
 }
