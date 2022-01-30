@@ -39,5 +39,15 @@ namespace Taxi
             tabControlMain.SelectedTab = companyTab;
         }
         #endregion
+
+        private void pbCarImage_Click(object sender, EventArgs e)
+        {
+            //TODO: Changeable Car images or get car
+        }
+
+        private void pbCompanyImage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
