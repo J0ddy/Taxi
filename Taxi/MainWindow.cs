@@ -21,6 +21,7 @@ namespace Taxi
 
         }
 
+        #region TabControl
         private void btnCarInfo_Click(object sender, EventArgs e)
         {
             tabControlMain.SelectedTab = carTab;
@@ -30,5 +31,12 @@ namespace Taxi
         {
             tabControlMain.SelectedTab = dataTab;
         }
+
+        private void btnCompanyInfo_Click(object sender, EventArgs e)
+        {
+            tabControlMain.SelectedTab = companyTab;
+        }
+        #endregion
+        
     }
 }
