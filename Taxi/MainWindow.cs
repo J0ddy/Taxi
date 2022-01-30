@@ -25,5 +25,10 @@ namespace Taxi
         {
             tabControlMain.SelectedTab = carTab;
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            tabControlMain.SelectedTab = dataTab;
+        }
     }
 }

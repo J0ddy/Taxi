@@ -30,10 +30,6 @@
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelButtons = new System.Windows.Forms.Panel();
-            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
-            this.btnCarInfo = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.tabControlMain = new MaterialSkin.Controls.MaterialTabControl();
             this.dataTab = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -57,6 +53,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pbCarImage = new System.Windows.Forms.PictureBox();
             this.companyTab = new System.Windows.Forms.TabPage();
+            this.btnHome = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
+            this.btnCarInfo = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
             this.panelButtons.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.dataTab.SuspendLayout();
@@ -73,6 +74,7 @@
             // 
             this.panelButtons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelButtons.Controls.Add(this.btnHome);
             this.panelButtons.Controls.Add(this.materialButton3);
             this.panelButtons.Controls.Add(this.btnCarInfo);
             this.panelButtons.Controls.Add(this.materialButton1);
@@ -81,91 +83,6 @@
             this.panelButtons.Name = "panelButtons";
             this.panelButtons.Size = new System.Drawing.Size(1073, 52);
             this.panelButtons.TabIndex = 2;
-            // 
-            // materialButton3
-            // 
-            this.materialButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton3.Depth = 0;
-            this.materialButton3.HighEmphasis = true;
-            this.materialButton3.Icon = null;
-            this.materialButton3.Location = new System.Drawing.Point(738, 8);
-            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton3.Name = "materialButton3";
-            this.materialButton3.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton3.Size = new System.Drawing.Size(172, 36);
-            this.materialButton3.TabIndex = 3;
-            this.materialButton3.Text = "Данни за Фирмата";
-            this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton3.UseAccentColor = true;
-            this.materialButton3.UseVisualStyleBackColor = true;
-            // 
-            // btnCarInfo
-            // 
-            this.btnCarInfo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCarInfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnCarInfo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCarInfo.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.btnCarInfo.Depth = 0;
-            this.btnCarInfo.HighEmphasis = true;
-            this.btnCarInfo.Icon = null;
-            this.btnCarInfo.Location = new System.Drawing.Point(529, 8);
-            this.btnCarInfo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnCarInfo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnCarInfo.Name = "btnCarInfo";
-            this.btnCarInfo.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnCarInfo.Size = new System.Drawing.Size(201, 36);
-            this.btnCarInfo.TabIndex = 4;
-            this.btnCarInfo.Text = "Данни за Автомобила";
-            this.btnCarInfo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.btnCarInfo.UseAccentColor = true;
-            this.btnCarInfo.UseVisualStyleBackColor = true;
-            this.btnCarInfo.Click += new System.EventHandler(this.btnCarInfo_Click);
-            // 
-            // materialButton1
-            // 
-            this.materialButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(163, 8);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(143, 36);
-            this.materialButton1.TabIndex = 2;
-            this.materialButton1.Text = "Ново Пътуване";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = true;
-            this.materialButton1.UseVisualStyleBackColor = true;
-            // 
-            // materialButton2
-            // 
-            this.materialButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(314, 8);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(184, 36);
-            this.materialButton2.TabIndex = 5;
-            this.materialButton2.Text = "Премахни Пътуване";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = true;
-            this.materialButton2.UseVisualStyleBackColor = true;
             // 
             // tabControlMain
             // 
@@ -422,6 +339,112 @@
             this.companyTab.Text = "companyTab";
             this.companyTab.UseVisualStyleBackColor = true;
             // 
+            // btnHome
+            // 
+            this.btnHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnHome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnHome.Depth = 0;
+            this.btnHome.HighEmphasis = true;
+            this.btnHome.Icon = null;
+            this.btnHome.Location = new System.Drawing.Point(118, 8);
+            this.btnHome.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnHome.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnHome.Name = "btnHome";
+            this.btnHome.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnHome.Size = new System.Drawing.Size(82, 36);
+            this.btnHome.TabIndex = 11;
+            this.btnHome.Text = "Начало";
+            this.btnHome.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnHome.UseAccentColor = true;
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // materialButton3
+            // 
+            this.materialButton3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.materialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton3.Depth = 0;
+            this.materialButton3.HighEmphasis = true;
+            this.materialButton3.Icon = null;
+            this.materialButton3.Location = new System.Drawing.Point(783, 8);
+            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton3.Name = "materialButton3";
+            this.materialButton3.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton3.Size = new System.Drawing.Size(172, 36);
+            this.materialButton3.TabIndex = 8;
+            this.materialButton3.Text = "Данни за Фирмата";
+            this.materialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton3.UseAccentColor = true;
+            this.materialButton3.UseVisualStyleBackColor = true;
+            // 
+            // btnCarInfo
+            // 
+            this.btnCarInfo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCarInfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnCarInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCarInfo.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnCarInfo.Depth = 0;
+            this.btnCarInfo.HighEmphasis = true;
+            this.btnCarInfo.Icon = null;
+            this.btnCarInfo.Location = new System.Drawing.Point(574, 8);
+            this.btnCarInfo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnCarInfo.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnCarInfo.Name = "btnCarInfo";
+            this.btnCarInfo.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnCarInfo.Size = new System.Drawing.Size(201, 36);
+            this.btnCarInfo.TabIndex = 9;
+            this.btnCarInfo.Text = "Данни за Автомобила";
+            this.btnCarInfo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnCarInfo.UseAccentColor = true;
+            this.btnCarInfo.UseVisualStyleBackColor = true;
+            // 
+            // materialButton1
+            // 
+            this.materialButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.HighEmphasis = true;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Location = new System.Drawing.Point(208, 8);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.Size = new System.Drawing.Size(143, 36);
+            this.materialButton1.TabIndex = 7;
+            this.materialButton1.Text = "Ново Пътуване";
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton1.UseAccentColor = true;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            // 
+            // materialButton2
+            // 
+            this.materialButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton2.Depth = 0;
+            this.materialButton2.HighEmphasis = true;
+            this.materialButton2.Icon = null;
+            this.materialButton2.Location = new System.Drawing.Point(359, 8);
+            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton2.Name = "materialButton2";
+            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton2.Size = new System.Drawing.Size(184, 36);
+            this.materialButton2.TabIndex = 10;
+            this.materialButton2.Text = "Премахни Пътуване";
+            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton2.UseAccentColor = true;
+            this.materialButton2.UseVisualStyleBackColor = true;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -453,10 +476,6 @@
 
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Panel panelButtons;
-        private MaterialSkin.Controls.MaterialButton materialButton3;
-        private MaterialSkin.Controls.MaterialButton btnCarInfo;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
-        private MaterialSkin.Controls.MaterialButton materialButton2;
         private MaterialSkin.Controls.MaterialTabControl tabControlMain;
         private TabPage dataTab;
         private TabPage carTab;
@@ -480,5 +499,10 @@
         private Label label2;
         private Label label1;
         private PictureBox pbCarImage;
+        private MaterialSkin.Controls.MaterialButton btnHome;
+        private MaterialSkin.Controls.MaterialButton materialButton3;
+        private MaterialSkin.Controls.MaterialButton btnCarInfo;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialButton materialButton2;
     }
 }
