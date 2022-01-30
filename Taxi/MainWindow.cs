@@ -19,5 +19,9 @@ namespace Taxi
         {
 
         }
-    }
+
+        private void btnCarInfo_Click(object sender, EventArgs e)
+        {
+            tabControlMain.SelectedTab = carTab;
+        }
 }

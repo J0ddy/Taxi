@@ -31,15 +31,17 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
+            this.btnCarInfo = new MaterialSkin.Controls.MaterialButton();
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
-            this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
+            this.tabControlMain = new MaterialSkin.Controls.MaterialTabControl();
             this.dataTab = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.carTab = new System.Windows.Forms.TabPage();
-            this.companyTab = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -54,19 +56,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pbCarImage = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.companyTab = new System.Windows.Forms.TabPage();
             this.panelButtons.SuspendLayout();
-            this.materialTabControl1.SuspendLayout();
+            this.tabControlMain.SuspendLayout();
             this.dataTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.carTab.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCarImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarImage)).BeginInit();
             this.SuspendLayout();
             // 
             // panelButtons
@@ -74,7 +74,7 @@
             this.panelButtons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelButtons.Controls.Add(this.materialButton3);
-            this.panelButtons.Controls.Add(this.materialButton4);
+            this.panelButtons.Controls.Add(this.btnCarInfo);
             this.panelButtons.Controls.Add(this.materialButton1);
             this.panelButtons.Controls.Add(this.materialButton2);
             this.panelButtons.Location = new System.Drawing.Point(0, 64);
@@ -103,26 +103,27 @@
             this.materialButton3.UseAccentColor = true;
             this.materialButton3.UseVisualStyleBackColor = true;
             // 
-            // materialButton4
+            // btnCarInfo
             // 
-            this.materialButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton4.Depth = 0;
-            this.materialButton4.HighEmphasis = true;
-            this.materialButton4.Icon = null;
-            this.materialButton4.Location = new System.Drawing.Point(529, 8);
-            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton4.Name = "materialButton4";
-            this.materialButton4.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton4.Size = new System.Drawing.Size(201, 36);
-            this.materialButton4.TabIndex = 4;
-            this.materialButton4.Text = "Данни за Автомобила";
-            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton4.UseAccentColor = true;
-            this.materialButton4.UseVisualStyleBackColor = true;
+            this.btnCarInfo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCarInfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnCarInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCarInfo.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnCarInfo.Depth = 0;
+            this.btnCarInfo.HighEmphasis = true;
+            this.btnCarInfo.Icon = null;
+            this.btnCarInfo.Location = new System.Drawing.Point(529, 8);
+            this.btnCarInfo.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnCarInfo.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnCarInfo.Name = "btnCarInfo";
+            this.btnCarInfo.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnCarInfo.Size = new System.Drawing.Size(201, 36);
+            this.btnCarInfo.TabIndex = 4;
+            this.btnCarInfo.Text = "Данни за Автомобила";
+            this.btnCarInfo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnCarInfo.UseAccentColor = true;
+            this.btnCarInfo.UseVisualStyleBackColor = true;
+            this.btnCarInfo.Click += new System.EventHandler(this.btnCarInfo_Click);
             // 
             // materialButton1
             // 
@@ -166,22 +167,22 @@
             this.materialButton2.UseAccentColor = true;
             this.materialButton2.UseVisualStyleBackColor = true;
             // 
-            // materialTabControl1
+            // tabControlMain
             // 
-            this.materialTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.tabControlMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.materialTabControl1.Controls.Add(this.dataTab);
-            this.materialTabControl1.Controls.Add(this.carTab);
-            this.materialTabControl1.Controls.Add(this.companyTab);
-            this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(0, 117);
-            this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabControl1.Multiline = true;
-            this.materialTabControl1.Name = "materialTabControl1";
-            this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1073, 527);
-            this.materialTabControl1.TabIndex = 3;
+            this.tabControlMain.Controls.Add(this.dataTab);
+            this.tabControlMain.Controls.Add(this.carTab);
+            this.tabControlMain.Controls.Add(this.companyTab);
+            this.tabControlMain.Depth = 0;
+            this.tabControlMain.Location = new System.Drawing.Point(0, 117);
+            this.tabControlMain.MouseState = MaterialSkin.MouseState.HOVER;
+            this.tabControlMain.Multiline = true;
+            this.tabControlMain.Name = "tabControlMain";
+            this.tabControlMain.SelectedIndex = 0;
+            this.tabControlMain.Size = new System.Drawing.Size(1073, 527);
+            this.tabControlMain.TabIndex = 3;
             // 
             // dataTab
             // 
@@ -218,15 +219,6 @@
             this.carTab.Text = "carTab";
             this.carTab.UseVisualStyleBackColor = true;
             // 
-            // companyTab
-            // 
-            this.companyTab.Location = new System.Drawing.Point(4, 24);
-            this.companyTab.Name = "companyTab";
-            this.companyTab.Size = new System.Drawing.Size(1065, 499);
-            this.companyTab.TabIndex = 2;
-            this.companyTab.Text = "companyTab";
-            this.companyTab.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.pictureBox3);
@@ -250,6 +242,36 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(743, 400);
             this.panel1.TabIndex = 15;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Taxi.Properties.Resources.taxi_subtract_48;
+            this.pictureBox3.Location = new System.Drawing.Point(48, 315);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 30;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Taxi.Properties.Resources.taxi_addition_48;
+            this.pictureBox2.Location = new System.Drawing.Point(48, 259);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 29;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Taxi.Properties.Resources.taxi_counter_48;
+            this.pictureBox1.Location = new System.Drawing.Point(48, 207);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
             // 
             // label13
             // 
@@ -391,42 +413,21 @@
             this.pbCarImage.TabIndex = 14;
             this.pbCarImage.TabStop = false;
             // 
-            // pictureBox1
+            // companyTab
             // 
-            this.pictureBox1.Image = global::Taxi.Properties.Resources.taxi_counter_48;
-            this.pictureBox1.Location = new System.Drawing.Point(48, 207);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Taxi.Properties.Resources.taxi_addition_48;
-            this.pictureBox2.Location = new System.Drawing.Point(48, 259);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 29;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Taxi.Properties.Resources.taxi_subtract_48;
-            this.pictureBox3.Location = new System.Drawing.Point(48, 315);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 30;
-            this.pictureBox3.TabStop = false;
+            this.companyTab.Location = new System.Drawing.Point(4, 24);
+            this.companyTab.Name = "companyTab";
+            this.companyTab.Size = new System.Drawing.Size(1065, 499);
+            this.companyTab.TabIndex = 2;
+            this.companyTab.Text = "companyTab";
+            this.companyTab.UseVisualStyleBackColor = true;
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1072, 650);
-            this.Controls.Add(this.materialTabControl1);
+            this.Controls.Add(this.tabControlMain);
             this.Controls.Add(this.panelButtons);
             this.MinimumSize = new System.Drawing.Size(1072, 650);
             this.Name = "MainWindow";
@@ -434,16 +435,16 @@
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.panelButtons.ResumeLayout(false);
             this.panelButtons.PerformLayout();
-            this.materialTabControl1.ResumeLayout(false);
+            this.tabControlMain.ResumeLayout(false);
             this.dataTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.carTab.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCarImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -453,10 +454,10 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Panel panelButtons;
         private MaterialSkin.Controls.MaterialButton materialButton3;
-        private MaterialSkin.Controls.MaterialButton materialButton4;
+        private MaterialSkin.Controls.MaterialButton btnCarInfo;
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private MaterialSkin.Controls.MaterialButton materialButton2;
-        private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
+        private MaterialSkin.Controls.MaterialTabControl tabControlMain;
         private TabPage dataTab;
         private TabPage carTab;
         private TabPage companyTab;
