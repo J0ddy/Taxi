@@ -689,7 +689,7 @@
             this.pbCompanyImage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbCompanyImage.ErrorImage = global::Taxi.Properties.Resources.taxi_96;
             this.pbCompanyImage.InitialImage = global::Taxi.Properties.Resources.taxi_96;
-            this.pbCompanyImage.Location = new System.Drawing.Point(51, 54);
+            this.pbCompanyImage.Location = new System.Drawing.Point(50, 45);
             this.pbCompanyImage.Name = "pbCompanyImage";
             this.pbCompanyImage.Size = new System.Drawing.Size(128, 121);
             this.pbCompanyImage.TabIndex = 48;
