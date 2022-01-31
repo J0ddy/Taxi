@@ -93,6 +93,16 @@ namespace Taxi.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap taxi_auth_96 {
+            get {
+                object obj = ResourceManager.GetObject("taxi-auth-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap taxi_counter_48 {
             get {
                 object obj = ResourceManager.GetObject("taxi-counter-48", resourceCulture);

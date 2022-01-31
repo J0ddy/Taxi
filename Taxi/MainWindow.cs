@@ -63,5 +63,11 @@ namespace Taxi
             //TODO: Changeable Company images only by Company admin
             throw new NotImplementedException();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AuthWindow auth = new AuthWindow();
+            auth.ShowDialog();
+        }
     }
 }

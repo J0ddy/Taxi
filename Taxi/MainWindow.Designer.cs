@@ -77,6 +77,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.lblCompanyName = new System.Windows.Forms.Label();
             this.pbCompanyImage = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelButtons.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.dataTab.SuspendLayout();
@@ -99,6 +100,7 @@
             // 
             this.panelButtons.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelButtons.Controls.Add(this.button1);
             this.panelButtons.Controls.Add(this.btnHome);
             this.panelButtons.Controls.Add(this.btnCompanyInfo);
             this.panelButtons.Controls.Add(this.btnCarInfo);
@@ -701,6 +703,16 @@
             this.pbCompanyImage.TabStop = false;
             this.pbCompanyImage.Click += new System.EventHandler(this.pbCompanyImage_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(978, 22);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -784,5 +796,6 @@
         private PictureBox pbCompanyImage;
         private Label lblCarYear;
         private Label label27;
+        private Button button1;
     }
 }
