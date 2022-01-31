@@ -20,11 +20,16 @@ namespace Taxi
 
         #region Methods
 
+        /// <summary>
+        /// Whether to enable or disable the btnNewTrip and btnRemoveTrip buttons
+        /// </summary>
+        /// <param name="enabled">Enable the buttons</param>
         private void AddDelButtonsEnabled(bool enabled)
         {
             btnNewTrip.Enabled = enabled;
             btnRemoveTrip.Enabled = enabled;
         }
+
         #endregion
 
         #region TabControl
