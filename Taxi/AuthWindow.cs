@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin;
@@ -23,6 +24,32 @@ namespace Taxi
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Yellow600, Primary.BlueGrey900, Primary.Yellow500,
                 Accent.LightBlue200, TextShade.WHITE);
+        }
+
+        private static bool ValidateEmail(string str)
+        {
+            return Regex.IsMatch(str, @"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*");
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (ValidateEmail(txtUser.Text))
+                {
+                    //TODO: Auth using email
+                    throw new NotImplementedException();
+                }
+                else
+                {
+                    //TODO: Auth using username
+                    throw new NotImplementedException();
+                }
+            }
+            catch (ArgumentException exception)
+            {
+                MessageBox.Show(exception.Message, "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
     }
 }
