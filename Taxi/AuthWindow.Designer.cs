@@ -431,8 +431,10 @@
             this.ClientSize = new System.Drawing.Size(700, 550);
             this.Controls.Add(this.tabControlAuthWindow);
             this.FormStyle = MaterialSkin.Controls.MaterialForm.FormStyles.ActionBar_None;
+            this.MinimumSize = new System.Drawing.Size(700, 550);
             this.Name = "AuthWindow";
             this.Padding = new System.Windows.Forms.Padding(3, 24, 3, 3);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Taxi - Authentication";
             this.tabControlAuthWindow.ResumeLayout(false);
             this.tabPageLogin.ResumeLayout(false);
