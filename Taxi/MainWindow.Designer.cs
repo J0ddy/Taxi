@@ -706,7 +706,6 @@
             this.MinimumSize = new System.Drawing.Size(1072, 650);
             this.Name = "MainWindow";
             this.Text = "Taxi";
-            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.panelButtons.ResumeLayout(false);
             this.panelButtons.PerformLayout();
             this.tabControlMain.ResumeLayout(false);

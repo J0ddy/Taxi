@@ -27,11 +27,6 @@ namespace Taxi
         }
         #endregion
 
-        private void MainWindow_Load(object sender, EventArgs e)
-        {
-
-        }
-
         #region TabControl
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -63,7 +58,5 @@ namespace Taxi
             //TODO: Changeable Company images only by Company admin
             throw new NotImplementedException();
         }
-
-        
     }
 }
