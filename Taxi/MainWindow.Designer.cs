@@ -39,7 +39,7 @@
             this.dataTab = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.carTab = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelCarTab = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -60,7 +60,7 @@
             this.lblCompanyName = new System.Windows.Forms.Label();
             this.pbCarImage = new System.Windows.Forms.PictureBox();
             this.companyTab = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panelCompanyTab = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -83,13 +83,13 @@
             this.dataTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.carTab.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelCarTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarImage)).BeginInit();
             this.companyTab.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panelCompanyTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -263,42 +263,42 @@
             // carTab
             // 
             this.carTab.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.carTab.Controls.Add(this.panel1);
+            this.carTab.Controls.Add(this.panelCarTab);
             this.carTab.Location = new System.Drawing.Point(4, 24);
             this.carTab.Name = "carTab";
             this.carTab.Size = new System.Drawing.Size(1065, 499);
             this.carTab.TabIndex = 1;
             this.carTab.Text = "carTab";
             // 
-            // panel1
+            // panelCarTab
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panelCarTab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label26);
-            this.panel1.Controls.Add(this.label27);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.lblCompanyName);
-            this.panel1.Controls.Add(this.pbCarImage);
-            this.panel1.Location = new System.Drawing.Point(161, 49);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(743, 400);
-            this.panel1.TabIndex = 16;
+            this.panelCarTab.BackColor = System.Drawing.Color.White;
+            this.panelCarTab.Controls.Add(this.label26);
+            this.panelCarTab.Controls.Add(this.label27);
+            this.panelCarTab.Controls.Add(this.pictureBox3);
+            this.panelCarTab.Controls.Add(this.pictureBox2);
+            this.panelCarTab.Controls.Add(this.pictureBox1);
+            this.panelCarTab.Controls.Add(this.label13);
+            this.panelCarTab.Controls.Add(this.label12);
+            this.panelCarTab.Controls.Add(this.label11);
+            this.panelCarTab.Controls.Add(this.label9);
+            this.panelCarTab.Controls.Add(this.label10);
+            this.panelCarTab.Controls.Add(this.label7);
+            this.panelCarTab.Controls.Add(this.label8);
+            this.panelCarTab.Controls.Add(this.label6);
+            this.panelCarTab.Controls.Add(this.label5);
+            this.panelCarTab.Controls.Add(this.label4);
+            this.panelCarTab.Controls.Add(this.label3);
+            this.panelCarTab.Controls.Add(this.label2);
+            this.panelCarTab.Controls.Add(this.lblCompanyName);
+            this.panelCarTab.Controls.Add(this.pbCarImage);
+            this.panelCarTab.Location = new System.Drawing.Point(161, 49);
+            this.panelCarTab.Name = "panelCarTab";
+            this.panelCarTab.Size = new System.Drawing.Size(743, 400);
+            this.panelCarTab.TabIndex = 16;
             // 
             // label26
             // 
@@ -495,40 +495,40 @@
             // companyTab
             // 
             this.companyTab.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.companyTab.Controls.Add(this.panel2);
+            this.companyTab.Controls.Add(this.panelCompanyTab);
             this.companyTab.Location = new System.Drawing.Point(4, 24);
             this.companyTab.Name = "companyTab";
             this.companyTab.Size = new System.Drawing.Size(1065, 499);
             this.companyTab.TabIndex = 2;
             this.companyTab.Text = "companyTab";
             // 
-            // panel2
+            // panelCompanyTab
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panelCompanyTab.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.pictureBox4);
-            this.panel2.Controls.Add(this.pictureBox5);
-            this.panel2.Controls.Add(this.pictureBox6);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label18);
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Controls.Add(this.label20);
-            this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.label23);
-            this.panel2.Controls.Add(this.label24);
-            this.panel2.Controls.Add(this.label25);
-            this.panel2.Controls.Add(this.pbCompanyImage);
-            this.panel2.Location = new System.Drawing.Point(161, 49);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(743, 400);
-            this.panel2.TabIndex = 49;
+            this.panelCompanyTab.BackColor = System.Drawing.Color.White;
+            this.panelCompanyTab.Controls.Add(this.pictureBox4);
+            this.panelCompanyTab.Controls.Add(this.pictureBox5);
+            this.panelCompanyTab.Controls.Add(this.pictureBox6);
+            this.panelCompanyTab.Controls.Add(this.label1);
+            this.panelCompanyTab.Controls.Add(this.label14);
+            this.panelCompanyTab.Controls.Add(this.label15);
+            this.panelCompanyTab.Controls.Add(this.label16);
+            this.panelCompanyTab.Controls.Add(this.label17);
+            this.panelCompanyTab.Controls.Add(this.label18);
+            this.panelCompanyTab.Controls.Add(this.label19);
+            this.panelCompanyTab.Controls.Add(this.label20);
+            this.panelCompanyTab.Controls.Add(this.label21);
+            this.panelCompanyTab.Controls.Add(this.label22);
+            this.panelCompanyTab.Controls.Add(this.label23);
+            this.panelCompanyTab.Controls.Add(this.label24);
+            this.panelCompanyTab.Controls.Add(this.label25);
+            this.panelCompanyTab.Controls.Add(this.pbCompanyImage);
+            this.panelCompanyTab.Location = new System.Drawing.Point(161, 49);
+            this.panelCompanyTab.Name = "panelCompanyTab";
+            this.panelCompanyTab.Size = new System.Drawing.Size(743, 400);
+            this.panelCompanyTab.TabIndex = 49;
             // 
             // pictureBox4
             // 
@@ -718,15 +718,15 @@
             this.dataTab.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.carTab.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelCarTab.ResumeLayout(false);
+            this.panelCarTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarImage)).EndInit();
             this.companyTab.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.panelCompanyTab.ResumeLayout(false);
+            this.panelCompanyTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -749,7 +749,7 @@
         private MaterialSkin.Controls.MaterialButton btnCarInfo;
         private MaterialSkin.Controls.MaterialButton btnNewTrip;
         private MaterialSkin.Controls.MaterialButton btnRemoveTrip;
-        private Panel panel2;
+        private Panel panelCompanyTab;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
@@ -767,7 +767,7 @@
         private Label label24;
         private Label label25;
         private PictureBox pbCarImage;
-        private Panel panel1;
+        private Panel panelCarTab;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
