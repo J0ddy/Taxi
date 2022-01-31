@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.btnHome = new MaterialSkin.Controls.MaterialButton();
             this.btnCompanyInfo = new MaterialSkin.Controls.MaterialButton();
@@ -736,8 +735,6 @@
         }
 
         #endregion
-
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Panel panelButtons;
         private MaterialSkin.Controls.MaterialTabControl tabControlMain;
         private TabPage dataTab;
