@@ -42,12 +42,14 @@ namespace Taxi
 
         private void pbCarImage_Click(object sender, EventArgs e)
         {
-            //TODO: Changeable Car images or get car
+            //TODO: Changeable Car images or Get Car image via API
+            throw new NotImplementedException();
         }
 
         private void pbCompanyImage_Click(object sender, EventArgs e)
         {
-
+            //TODO: Changeable Company images only by Company admin
+            throw new NotImplementedException();
         }
     }
 }
