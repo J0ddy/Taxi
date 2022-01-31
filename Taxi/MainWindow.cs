@@ -18,25 +18,37 @@ namespace Taxi
             pbCompanyImage.Image ??= pbCompanyImage.ErrorImage;
         }
 
+        #region Methods
+
+        private void AddDelButtonsEnabled(bool enabled)
+        {
+            btnNewTrip.Enabled = enabled;
+            btnRemoveTrip.Enabled = enabled;
+        }
+        #endregion
+
         private void MainWindow_Load(object sender, EventArgs e)
         {
 
         }
 
         #region TabControl
-        private void btnCarInfo_Click(object sender, EventArgs e)
-        {
-            tabControlMain.SelectedTab = carTab;
-        }
-
         private void btnHome_Click(object sender, EventArgs e)
         {
             tabControlMain.SelectedTab = dataTab;
+            AddDelButtonsEnabled(true);
+        }
+
+        private void btnCarInfo_Click(object sender, EventArgs e)
+        {
+            tabControlMain.SelectedTab = carTab;
+            AddDelButtonsEnabled(false);
         }
 
         private void btnCompanyInfo_Click(object sender, EventArgs e)
         {
             tabControlMain.SelectedTab = companyTab;
+            AddDelButtonsEnabled(false);
         }
         #endregion
 
@@ -51,5 +63,7 @@ namespace Taxi
             //TODO: Changeable Company images only by Company admin
             throw new NotImplementedException();
         }
+
+        
     }
 }

@@ -33,13 +33,15 @@
             this.btnHome = new MaterialSkin.Controls.MaterialButton();
             this.btnCompanyInfo = new MaterialSkin.Controls.MaterialButton();
             this.btnCarInfo = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.btnNewTrip = new MaterialSkin.Controls.MaterialButton();
+            this.btnRemoveTrip = new MaterialSkin.Controls.MaterialButton();
             this.tabControlMain = new MaterialSkin.Controls.MaterialTabControl();
             this.dataTab = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.carTab = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -76,8 +78,6 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.pbCompanyImage = new System.Windows.Forms.PictureBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
             this.panelButtons.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.dataTab.SuspendLayout();
@@ -103,8 +103,8 @@
             this.panelButtons.Controls.Add(this.btnHome);
             this.panelButtons.Controls.Add(this.btnCompanyInfo);
             this.panelButtons.Controls.Add(this.btnCarInfo);
-            this.panelButtons.Controls.Add(this.materialButton1);
-            this.panelButtons.Controls.Add(this.materialButton2);
+            this.panelButtons.Controls.Add(this.btnNewTrip);
+            this.panelButtons.Controls.Add(this.btnRemoveTrip);
             this.panelButtons.Location = new System.Drawing.Point(0, 64);
             this.panelButtons.Name = "panelButtons";
             this.panelButtons.Size = new System.Drawing.Size(1073, 52);
@@ -176,47 +176,47 @@
             this.btnCarInfo.UseVisualStyleBackColor = true;
             this.btnCarInfo.Click += new System.EventHandler(this.btnCarInfo_Click);
             // 
-            // materialButton1
+            // btnNewTrip
             // 
-            this.materialButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(208, 8);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(143, 36);
-            this.materialButton1.TabIndex = 7;
-            this.materialButton1.Text = "Ново Пътуване";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = true;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.btnNewTrip.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnNewTrip.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnNewTrip.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNewTrip.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnNewTrip.Depth = 0;
+            this.btnNewTrip.HighEmphasis = true;
+            this.btnNewTrip.Icon = null;
+            this.btnNewTrip.Location = new System.Drawing.Point(208, 8);
+            this.btnNewTrip.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnNewTrip.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnNewTrip.Name = "btnNewTrip";
+            this.btnNewTrip.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnNewTrip.Size = new System.Drawing.Size(143, 36);
+            this.btnNewTrip.TabIndex = 7;
+            this.btnNewTrip.Text = "Ново Пътуване";
+            this.btnNewTrip.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnNewTrip.UseAccentColor = true;
+            this.btnNewTrip.UseVisualStyleBackColor = true;
             // 
-            // materialButton2
+            // btnRemoveTrip
             // 
-            this.materialButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton2.Depth = 0;
-            this.materialButton2.HighEmphasis = true;
-            this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(359, 8);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton2.Name = "materialButton2";
-            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton2.Size = new System.Drawing.Size(184, 36);
-            this.materialButton2.TabIndex = 10;
-            this.materialButton2.Text = "Премахни Пътуване";
-            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton2.UseAccentColor = true;
-            this.materialButton2.UseVisualStyleBackColor = true;
+            this.btnRemoveTrip.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRemoveTrip.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnRemoveTrip.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRemoveTrip.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnRemoveTrip.Depth = 0;
+            this.btnRemoveTrip.HighEmphasis = true;
+            this.btnRemoveTrip.Icon = null;
+            this.btnRemoveTrip.Location = new System.Drawing.Point(359, 8);
+            this.btnRemoveTrip.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnRemoveTrip.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnRemoveTrip.Name = "btnRemoveTrip";
+            this.btnRemoveTrip.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnRemoveTrip.Size = new System.Drawing.Size(184, 36);
+            this.btnRemoveTrip.TabIndex = 10;
+            this.btnRemoveTrip.Text = "Премахни Пътуване";
+            this.btnRemoveTrip.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnRemoveTrip.UseAccentColor = true;
+            this.btnRemoveTrip.UseVisualStyleBackColor = true;
             // 
             // tabControlMain
             // 
@@ -296,6 +296,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(743, 400);
             this.panel1.TabIndex = 16;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label26.Location = new System.Drawing.Point(264, 130);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(79, 18);
+            this.label26.TabIndex = 49;
+            this.label26.Text = "{car_year}";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label27.Location = new System.Drawing.Point(195, 130);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(63, 18);
+            this.label27.TabIndex = 48;
+            this.label27.Text = "Година:";
             // 
             // pictureBox3
             // 
@@ -676,26 +696,6 @@
             this.pbCompanyImage.TabStop = false;
             this.pbCompanyImage.Click += new System.EventHandler(this.pbCompanyImage_Click);
             // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(264, 130);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(79, 18);
-            this.label26.TabIndex = 49;
-            this.label26.Text = "{car_year}";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label27.Location = new System.Drawing.Point(195, 130);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(63, 18);
-            this.label27.TabIndex = 48;
-            this.label27.Text = "Година:";
-            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -742,8 +742,8 @@
         private MaterialSkin.Controls.MaterialButton btnHome;
         private MaterialSkin.Controls.MaterialButton btnCompanyInfo;
         private MaterialSkin.Controls.MaterialButton btnCarInfo;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
-        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialButton btnNewTrip;
+        private MaterialSkin.Controls.MaterialButton btnRemoveTrip;
         private Panel panel2;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
