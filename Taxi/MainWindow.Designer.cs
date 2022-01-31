@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panelButtons = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnHome = new MaterialSkin.Controls.MaterialButton();
             this.btnCompanyInfo = new MaterialSkin.Controls.MaterialButton();
             this.btnCarInfo = new MaterialSkin.Controls.MaterialButton();
@@ -77,7 +78,6 @@
             this.label24 = new System.Windows.Forms.Label();
             this.lblCompanyName = new System.Windows.Forms.Label();
             this.pbCompanyImage = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.panelButtons.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.dataTab.SuspendLayout();
@@ -110,6 +110,16 @@
             this.panelButtons.Name = "panelButtons";
             this.panelButtons.Size = new System.Drawing.Size(1073, 52);
             this.panelButtons.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(976, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 52);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Debug: Open Login";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnHome
             // 
@@ -702,16 +712,6 @@
             this.pbCompanyImage.TabIndex = 48;
             this.pbCompanyImage.TabStop = false;
             this.pbCompanyImage.Click += new System.EventHandler(this.pbCompanyImage_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(978, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainWindow
             // 

@@ -51,5 +51,24 @@ namespace Taxi
                 MessageBox.Show(exception.Message, "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            tabControlAuthWindow.SelectedTab = tabPageRegister;
+        }
+
+        private void btnBackToLogin_Click(object sender, EventArgs e)
+        {
+            tabControlAuthWindow.SelectedTab = tabPageLogin;
+        }
+
+        private void btnRegisterGo_Click(object sender, EventArgs e)
+        {
+            //TODO: Check Username Valid or Exists
+            //TODO: Check Email Valid or Exists
+            //TODO: Check Passwords Match
+            //TODO: Check Company Valid or Exists
+            throw new NotImplementedException();
+        }
     }
 }
