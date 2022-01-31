@@ -40,19 +40,19 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.carTab = new System.Windows.Forms.TabPage();
             this.panelCarTab = new System.Windows.Forms.Panel();
-            this.label26 = new System.Windows.Forms.Label();
+            this.lblCarYear = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblCarKmToLitre = new System.Windows.Forms.Label();
+            this.lblCarMake = new System.Windows.Forms.Label();
+            this.lblCarModel = new System.Windows.Forms.Label();
+            this.lblTaxiTotalIncome = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblTaxiTotalExpenses = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblTaxiTotalKM = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -276,19 +276,19 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelCarTab.BackColor = System.Drawing.Color.White;
-            this.panelCarTab.Controls.Add(this.label26);
+            this.panelCarTab.Controls.Add(this.lblCarYear);
             this.panelCarTab.Controls.Add(this.label27);
             this.panelCarTab.Controls.Add(this.pictureBox3);
             this.panelCarTab.Controls.Add(this.pictureBox2);
             this.panelCarTab.Controls.Add(this.pictureBox1);
-            this.panelCarTab.Controls.Add(this.label13);
-            this.panelCarTab.Controls.Add(this.label12);
-            this.panelCarTab.Controls.Add(this.label11);
-            this.panelCarTab.Controls.Add(this.label9);
+            this.panelCarTab.Controls.Add(this.lblCarKmToLitre);
+            this.panelCarTab.Controls.Add(this.lblCarMake);
+            this.panelCarTab.Controls.Add(this.lblCarModel);
+            this.panelCarTab.Controls.Add(this.lblTaxiTotalIncome);
             this.panelCarTab.Controls.Add(this.label10);
-            this.panelCarTab.Controls.Add(this.label7);
+            this.panelCarTab.Controls.Add(this.lblTaxiTotalExpenses);
             this.panelCarTab.Controls.Add(this.label8);
-            this.panelCarTab.Controls.Add(this.label6);
+            this.panelCarTab.Controls.Add(this.lblTaxiTotalKM);
             this.panelCarTab.Controls.Add(this.label5);
             this.panelCarTab.Controls.Add(this.label4);
             this.panelCarTab.Controls.Add(this.label3);
@@ -300,15 +300,15 @@
             this.panelCarTab.Size = new System.Drawing.Size(743, 400);
             this.panelCarTab.TabIndex = 16;
             // 
-            // label26
+            // lblCarYear
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(264, 130);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(79, 18);
-            this.label26.TabIndex = 49;
-            this.label26.Text = "{car_year}";
+            this.lblCarYear.AutoSize = true;
+            this.lblCarYear.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCarYear.Location = new System.Drawing.Point(264, 130);
+            this.lblCarYear.Name = "lblCarYear";
+            this.lblCarYear.Size = new System.Drawing.Size(79, 18);
+            this.lblCarYear.TabIndex = 49;
+            this.lblCarYear.Text = "{car_year}";
             // 
             // label27
             // 
@@ -350,45 +350,45 @@
             this.pictureBox1.TabIndex = 45;
             this.pictureBox1.TabStop = false;
             // 
-            // label13
+            // lblCarKmToLitre
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(264, 156);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(150, 18);
-            this.label13.TabIndex = 44;
-            this.label13.Text = "{car_km_to_litre:N0}";
+            this.lblCarKmToLitre.AutoSize = true;
+            this.lblCarKmToLitre.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCarKmToLitre.Location = new System.Drawing.Point(264, 156);
+            this.lblCarKmToLitre.Name = "lblCarKmToLitre";
+            this.lblCarKmToLitre.Size = new System.Drawing.Size(150, 18);
+            this.lblCarKmToLitre.TabIndex = 44;
+            this.lblCarKmToLitre.Text = "{car_km_to_litre:N0}";
             // 
-            // label12
+            // lblCarMake
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(264, 104);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(88, 18);
-            this.label12.TabIndex = 43;
-            this.label12.Text = "{car_make}";
+            this.lblCarMake.AutoSize = true;
+            this.lblCarMake.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCarMake.Location = new System.Drawing.Point(264, 104);
+            this.lblCarMake.Name = "lblCarMake";
+            this.lblCarMake.Size = new System.Drawing.Size(88, 18);
+            this.lblCarMake.TabIndex = 43;
+            this.lblCarMake.Text = "{car_make}";
             // 
-            // label11
+            // lblCarModel
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(264, 78);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(92, 18);
-            this.label11.TabIndex = 42;
-            this.label11.Text = "{car_model}";
+            this.lblCarModel.AutoSize = true;
+            this.lblCarModel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCarModel.Location = new System.Drawing.Point(264, 78);
+            this.lblCarModel.Name = "lblCarModel";
+            this.lblCarModel.Size = new System.Drawing.Size(92, 18);
+            this.lblCarModel.TabIndex = 42;
+            this.lblCarModel.Text = "{car_model}";
             // 
-            // label9
+            // lblTaxiTotalIncome
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(193, 263);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(180, 22);
-            this.label9.TabIndex = 41;
-            this.label9.Text = "{total_expenses:N1}";
+            this.lblTaxiTotalIncome.AutoSize = true;
+            this.lblTaxiTotalIncome.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTaxiTotalIncome.Location = new System.Drawing.Point(193, 263);
+            this.lblTaxiTotalIncome.Name = "lblTaxiTotalIncome";
+            this.lblTaxiTotalIncome.Size = new System.Drawing.Size(159, 22);
+            this.lblTaxiTotalIncome.TabIndex = 41;
+            this.lblTaxiTotalIncome.Text = "{total_income:N1}";
             // 
             // label10
             // 
@@ -400,15 +400,15 @@
             this.label10.TabIndex = 40;
             this.label10.Text = "Приходи: ";
             // 
-            // label7
+            // lblTaxiTotalExpenses
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(193, 320);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(205, 22);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "{total_expenses:N1} лв";
+            this.lblTaxiTotalExpenses.AutoSize = true;
+            this.lblTaxiTotalExpenses.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTaxiTotalExpenses.Location = new System.Drawing.Point(193, 320);
+            this.lblTaxiTotalExpenses.Name = "lblTaxiTotalExpenses";
+            this.lblTaxiTotalExpenses.Size = new System.Drawing.Size(205, 22);
+            this.lblTaxiTotalExpenses.TabIndex = 39;
+            this.lblTaxiTotalExpenses.Text = "{total_expenses:N1} лв";
             // 
             // label8
             // 
@@ -420,15 +420,15 @@
             this.label8.TabIndex = 38;
             this.label8.Text = "Разходи: ";
             // 
-            // label6
+            // lblTaxiTotalKM
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(193, 210);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 22);
-            this.label6.TabIndex = 37;
-            this.label6.Text = "{total_km:N0}";
+            this.lblTaxiTotalKM.AutoSize = true;
+            this.lblTaxiTotalKM.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTaxiTotalKM.Location = new System.Drawing.Point(193, 210);
+            this.lblTaxiTotalKM.Name = "lblTaxiTotalKM";
+            this.lblTaxiTotalKM.Size = new System.Drawing.Size(122, 22);
+            this.lblTaxiTotalKM.TabIndex = 37;
+            this.lblTaxiTotalKM.Text = "{total_km:N0}";
             // 
             // label5
             // 
@@ -771,21 +771,21 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
-        private Label label13;
-        private Label label12;
-        private Label label11;
-        private Label label9;
+        private Label lblCarKmToLitre;
+        private Label lblCarMake;
+        private Label lblCarModel;
+        private Label lblTaxiTotalIncome;
         private Label label10;
-        private Label label7;
+        private Label lblTaxiTotalExpenses;
         private Label label8;
-        private Label label6;
+        private Label lblTaxiTotalKM;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
         private Label lblCompanyName;
         private PictureBox pbCompanyImage;
-        private Label label26;
+        private Label lblCarYear;
         private Label label27;
     }
 }
