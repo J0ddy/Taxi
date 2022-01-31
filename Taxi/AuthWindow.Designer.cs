@@ -36,14 +36,14 @@
             this.txtUser = new MaterialSkin.Controls.MaterialTextBox2();
             this.pbAuthIcon = new System.Windows.Forms.PictureBox();
             this.tabPageRegister = new System.Windows.Forms.TabPage();
+            this.btnBackToLogin = new MaterialSkin.Controls.MaterialButton();
+            this.btnRegisterGo = new MaterialSkin.Controls.MaterialButton();
+            this.txtRegisterCompany = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtRegisterEmail = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtRegisterPasswordConfirm = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtRegisterPassword = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtRegisterUsername = new MaterialSkin.Controls.MaterialTextBox2();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtRegisterPasswordConfirm = new MaterialSkin.Controls.MaterialTextBox2();
-            this.txtRegisterEmail = new MaterialSkin.Controls.MaterialTextBox2();
-            this.txtRegisterCompany = new MaterialSkin.Controls.MaterialTextBox2();
-            this.btnBackToLogin = new MaterialSkin.Controls.MaterialButton();
-            this.btnRegisterGo = new MaterialSkin.Controls.MaterialButton();
             this.tabControlAuthWindow.SuspendLayout();
             this.tabPageLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAuthIcon)).BeginInit();
@@ -122,6 +122,7 @@
             this.btnLogin.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnLogin.UseAccentColor = true;
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPassword
             // 
@@ -213,169 +214,9 @@
             this.tabPageRegister.Text = "Register";
             this.tabPageRegister.UseVisualStyleBackColor = true;
             // 
-            // txtRegisterPassword
-            // 
-            this.txtRegisterPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtRegisterPassword.AnimateReadOnly = false;
-            this.txtRegisterPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtRegisterPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtRegisterPassword.Depth = 0;
-            this.txtRegisterPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtRegisterPassword.HelperText = "Password";
-            this.txtRegisterPassword.HideSelection = true;
-            this.txtRegisterPassword.Hint = "Password";
-            this.txtRegisterPassword.LeadingIcon = null;
-            this.txtRegisterPassword.Location = new System.Drawing.Point(163, 249);
-            this.txtRegisterPassword.MaxLength = 100;
-            this.txtRegisterPassword.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtRegisterPassword.Name = "txtRegisterPassword";
-            this.txtRegisterPassword.PasswordChar = '●';
-            this.txtRegisterPassword.PrefixSuffixText = null;
-            this.txtRegisterPassword.ReadOnly = false;
-            this.txtRegisterPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtRegisterPassword.SelectedText = "";
-            this.txtRegisterPassword.SelectionLength = 0;
-            this.txtRegisterPassword.SelectionStart = 0;
-            this.txtRegisterPassword.ShortcutsEnabled = true;
-            this.txtRegisterPassword.Size = new System.Drawing.Size(360, 48);
-            this.txtRegisterPassword.TabIndex = 2;
-            this.txtRegisterPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtRegisterPassword.TrailingIcon = null;
-            this.txtRegisterPassword.UseSystemPasswordChar = true;
-            // 
-            // txtRegisterUsername
-            // 
-            this.txtRegisterUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtRegisterUsername.AnimateReadOnly = false;
-            this.txtRegisterUsername.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtRegisterUsername.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtRegisterUsername.Depth = 0;
-            this.txtRegisterUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtRegisterUsername.HelperText = "Username";
-            this.txtRegisterUsername.HideSelection = true;
-            this.txtRegisterUsername.Hint = "Username";
-            this.txtRegisterUsername.LeadingIcon = null;
-            this.txtRegisterUsername.Location = new System.Drawing.Point(163, 141);
-            this.txtRegisterUsername.MaxLength = 100;
-            this.txtRegisterUsername.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtRegisterUsername.Name = "txtRegisterUsername";
-            this.txtRegisterUsername.PasswordChar = '\0';
-            this.txtRegisterUsername.PrefixSuffixText = null;
-            this.txtRegisterUsername.ReadOnly = false;
-            this.txtRegisterUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtRegisterUsername.SelectedText = "";
-            this.txtRegisterUsername.SelectionLength = 0;
-            this.txtRegisterUsername.SelectionStart = 0;
-            this.txtRegisterUsername.ShortcutsEnabled = true;
-            this.txtRegisterUsername.Size = new System.Drawing.Size(360, 48);
-            this.txtRegisterUsername.TabIndex = 0;
-            this.txtRegisterUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtRegisterUsername.TrailingIcon = null;
-            this.txtRegisterUsername.UseSystemPasswordChar = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackgroundImage = global::Taxi.Properties.Resources.taxi_auth_96;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(279, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
-            // 
-            // txtRegisterPasswordConfirm
-            // 
-            this.txtRegisterPasswordConfirm.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtRegisterPasswordConfirm.AnimateReadOnly = false;
-            this.txtRegisterPasswordConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtRegisterPasswordConfirm.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtRegisterPasswordConfirm.Depth = 0;
-            this.txtRegisterPasswordConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtRegisterPasswordConfirm.HelperText = "Confirm Password";
-            this.txtRegisterPasswordConfirm.HideSelection = true;
-            this.txtRegisterPasswordConfirm.Hint = "Confirm Password";
-            this.txtRegisterPasswordConfirm.LeadingIcon = null;
-            this.txtRegisterPasswordConfirm.Location = new System.Drawing.Point(163, 303);
-            this.txtRegisterPasswordConfirm.MaxLength = 100;
-            this.txtRegisterPasswordConfirm.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtRegisterPasswordConfirm.Name = "txtRegisterPasswordConfirm";
-            this.txtRegisterPasswordConfirm.PasswordChar = '●';
-            this.txtRegisterPasswordConfirm.PrefixSuffixText = null;
-            this.txtRegisterPasswordConfirm.ReadOnly = false;
-            this.txtRegisterPasswordConfirm.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtRegisterPasswordConfirm.SelectedText = "";
-            this.txtRegisterPasswordConfirm.SelectionLength = 0;
-            this.txtRegisterPasswordConfirm.SelectionStart = 0;
-            this.txtRegisterPasswordConfirm.ShortcutsEnabled = true;
-            this.txtRegisterPasswordConfirm.Size = new System.Drawing.Size(360, 48);
-            this.txtRegisterPasswordConfirm.TabIndex = 3;
-            this.txtRegisterPasswordConfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtRegisterPasswordConfirm.TrailingIcon = null;
-            this.txtRegisterPasswordConfirm.UseSystemPasswordChar = true;
-            // 
-            // txtRegisterEmail
-            // 
-            this.txtRegisterEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtRegisterEmail.AnimateReadOnly = false;
-            this.txtRegisterEmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtRegisterEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtRegisterEmail.Depth = 0;
-            this.txtRegisterEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtRegisterEmail.HelperText = "Email";
-            this.txtRegisterEmail.HideSelection = true;
-            this.txtRegisterEmail.Hint = "Email";
-            this.txtRegisterEmail.LeadingIcon = null;
-            this.txtRegisterEmail.Location = new System.Drawing.Point(163, 195);
-            this.txtRegisterEmail.MaxLength = 100;
-            this.txtRegisterEmail.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtRegisterEmail.Name = "txtRegisterEmail";
-            this.txtRegisterEmail.PasswordChar = '\0';
-            this.txtRegisterEmail.PrefixSuffixText = null;
-            this.txtRegisterEmail.ReadOnly = false;
-            this.txtRegisterEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtRegisterEmail.SelectedText = "";
-            this.txtRegisterEmail.SelectionLength = 0;
-            this.txtRegisterEmail.SelectionStart = 0;
-            this.txtRegisterEmail.ShortcutsEnabled = true;
-            this.txtRegisterEmail.Size = new System.Drawing.Size(360, 48);
-            this.txtRegisterEmail.TabIndex = 1;
-            this.txtRegisterEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtRegisterEmail.TrailingIcon = null;
-            this.txtRegisterEmail.UseSystemPasswordChar = false;
-            // 
-            // txtRegisterCompany
-            // 
-            this.txtRegisterCompany.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtRegisterCompany.AnimateReadOnly = false;
-            this.txtRegisterCompany.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtRegisterCompany.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtRegisterCompany.Depth = 0;
-            this.txtRegisterCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.txtRegisterCompany.HelperText = "Company Name";
-            this.txtRegisterCompany.HideSelection = true;
-            this.txtRegisterCompany.Hint = "Company Name";
-            this.txtRegisterCompany.LeadingIcon = null;
-            this.txtRegisterCompany.Location = new System.Drawing.Point(163, 357);
-            this.txtRegisterCompany.MaxLength = 100;
-            this.txtRegisterCompany.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtRegisterCompany.Name = "txtRegisterCompany";
-            this.txtRegisterCompany.PasswordChar = '●';
-            this.txtRegisterCompany.PrefixSuffixText = null;
-            this.txtRegisterCompany.ReadOnly = false;
-            this.txtRegisterCompany.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtRegisterCompany.SelectedText = "";
-            this.txtRegisterCompany.SelectionLength = 0;
-            this.txtRegisterCompany.SelectionStart = 0;
-            this.txtRegisterCompany.ShortcutsEnabled = true;
-            this.txtRegisterCompany.Size = new System.Drawing.Size(360, 48);
-            this.txtRegisterCompany.TabIndex = 4;
-            this.txtRegisterCompany.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtRegisterCompany.TrailingIcon = null;
-            this.txtRegisterCompany.UseSystemPasswordChar = false;
-            // 
             // btnBackToLogin
             // 
+            this.btnBackToLogin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBackToLogin.AutoSize = false;
             this.btnBackToLogin.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnBackToLogin.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
@@ -416,6 +257,172 @@
             this.btnRegisterGo.UseAccentColor = true;
             this.btnRegisterGo.UseVisualStyleBackColor = true;
             this.btnRegisterGo.Click += new System.EventHandler(this.btnRegisterGo_Click);
+            // 
+            // txtRegisterCompany
+            // 
+            this.txtRegisterCompany.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtRegisterCompany.AnimateReadOnly = false;
+            this.txtRegisterCompany.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtRegisterCompany.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtRegisterCompany.Depth = 0;
+            this.txtRegisterCompany.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtRegisterCompany.HelperText = "Company Name";
+            this.txtRegisterCompany.HideSelection = true;
+            this.txtRegisterCompany.Hint = "Company Name";
+            this.txtRegisterCompany.LeadingIcon = null;
+            this.txtRegisterCompany.Location = new System.Drawing.Point(163, 357);
+            this.txtRegisterCompany.MaxLength = 100;
+            this.txtRegisterCompany.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtRegisterCompany.Name = "txtRegisterCompany";
+            this.txtRegisterCompany.PasswordChar = '●';
+            this.txtRegisterCompany.PrefixSuffixText = null;
+            this.txtRegisterCompany.ReadOnly = false;
+            this.txtRegisterCompany.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtRegisterCompany.SelectedText = "";
+            this.txtRegisterCompany.SelectionLength = 0;
+            this.txtRegisterCompany.SelectionStart = 0;
+            this.txtRegisterCompany.ShortcutsEnabled = true;
+            this.txtRegisterCompany.Size = new System.Drawing.Size(360, 48);
+            this.txtRegisterCompany.TabIndex = 4;
+            this.txtRegisterCompany.TabStop = false;
+            this.txtRegisterCompany.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtRegisterCompany.TrailingIcon = null;
+            this.txtRegisterCompany.UseSystemPasswordChar = false;
+            // 
+            // txtRegisterEmail
+            // 
+            this.txtRegisterEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtRegisterEmail.AnimateReadOnly = false;
+            this.txtRegisterEmail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtRegisterEmail.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtRegisterEmail.Depth = 0;
+            this.txtRegisterEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtRegisterEmail.HelperText = "Email";
+            this.txtRegisterEmail.HideSelection = true;
+            this.txtRegisterEmail.Hint = "Email";
+            this.txtRegisterEmail.LeadingIcon = null;
+            this.txtRegisterEmail.Location = new System.Drawing.Point(163, 195);
+            this.txtRegisterEmail.MaxLength = 100;
+            this.txtRegisterEmail.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtRegisterEmail.Name = "txtRegisterEmail";
+            this.txtRegisterEmail.PasswordChar = '\0';
+            this.txtRegisterEmail.PrefixSuffixText = null;
+            this.txtRegisterEmail.ReadOnly = false;
+            this.txtRegisterEmail.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtRegisterEmail.SelectedText = "";
+            this.txtRegisterEmail.SelectionLength = 0;
+            this.txtRegisterEmail.SelectionStart = 0;
+            this.txtRegisterEmail.ShortcutsEnabled = true;
+            this.txtRegisterEmail.Size = new System.Drawing.Size(360, 48);
+            this.txtRegisterEmail.TabIndex = 1;
+            this.txtRegisterEmail.TabStop = false;
+            this.txtRegisterEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtRegisterEmail.TrailingIcon = null;
+            this.txtRegisterEmail.UseSystemPasswordChar = false;
+            // 
+            // txtRegisterPasswordConfirm
+            // 
+            this.txtRegisterPasswordConfirm.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtRegisterPasswordConfirm.AnimateReadOnly = false;
+            this.txtRegisterPasswordConfirm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtRegisterPasswordConfirm.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtRegisterPasswordConfirm.Depth = 0;
+            this.txtRegisterPasswordConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtRegisterPasswordConfirm.HelperText = "Confirm Password";
+            this.txtRegisterPasswordConfirm.HideSelection = true;
+            this.txtRegisterPasswordConfirm.Hint = "Confirm Password";
+            this.txtRegisterPasswordConfirm.LeadingIcon = null;
+            this.txtRegisterPasswordConfirm.Location = new System.Drawing.Point(163, 303);
+            this.txtRegisterPasswordConfirm.MaxLength = 100;
+            this.txtRegisterPasswordConfirm.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtRegisterPasswordConfirm.Name = "txtRegisterPasswordConfirm";
+            this.txtRegisterPasswordConfirm.PasswordChar = '●';
+            this.txtRegisterPasswordConfirm.PrefixSuffixText = null;
+            this.txtRegisterPasswordConfirm.ReadOnly = false;
+            this.txtRegisterPasswordConfirm.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtRegisterPasswordConfirm.SelectedText = "";
+            this.txtRegisterPasswordConfirm.SelectionLength = 0;
+            this.txtRegisterPasswordConfirm.SelectionStart = 0;
+            this.txtRegisterPasswordConfirm.ShortcutsEnabled = true;
+            this.txtRegisterPasswordConfirm.Size = new System.Drawing.Size(360, 48);
+            this.txtRegisterPasswordConfirm.TabIndex = 3;
+            this.txtRegisterPasswordConfirm.TabStop = false;
+            this.txtRegisterPasswordConfirm.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtRegisterPasswordConfirm.TrailingIcon = null;
+            this.txtRegisterPasswordConfirm.UseSystemPasswordChar = true;
+            // 
+            // txtRegisterPassword
+            // 
+            this.txtRegisterPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtRegisterPassword.AnimateReadOnly = false;
+            this.txtRegisterPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtRegisterPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtRegisterPassword.Depth = 0;
+            this.txtRegisterPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtRegisterPassword.HelperText = "Password";
+            this.txtRegisterPassword.HideSelection = true;
+            this.txtRegisterPassword.Hint = "Password";
+            this.txtRegisterPassword.LeadingIcon = null;
+            this.txtRegisterPassword.Location = new System.Drawing.Point(163, 249);
+            this.txtRegisterPassword.MaxLength = 100;
+            this.txtRegisterPassword.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtRegisterPassword.Name = "txtRegisterPassword";
+            this.txtRegisterPassword.PasswordChar = '●';
+            this.txtRegisterPassword.PrefixSuffixText = null;
+            this.txtRegisterPassword.ReadOnly = false;
+            this.txtRegisterPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtRegisterPassword.SelectedText = "";
+            this.txtRegisterPassword.SelectionLength = 0;
+            this.txtRegisterPassword.SelectionStart = 0;
+            this.txtRegisterPassword.ShortcutsEnabled = true;
+            this.txtRegisterPassword.Size = new System.Drawing.Size(360, 48);
+            this.txtRegisterPassword.TabIndex = 2;
+            this.txtRegisterPassword.TabStop = false;
+            this.txtRegisterPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtRegisterPassword.TrailingIcon = null;
+            this.txtRegisterPassword.UseSystemPasswordChar = true;
+            // 
+            // txtRegisterUsername
+            // 
+            this.txtRegisterUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtRegisterUsername.AnimateReadOnly = false;
+            this.txtRegisterUsername.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtRegisterUsername.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtRegisterUsername.Depth = 0;
+            this.txtRegisterUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtRegisterUsername.HelperText = "Username";
+            this.txtRegisterUsername.HideSelection = true;
+            this.txtRegisterUsername.Hint = "Username";
+            this.txtRegisterUsername.LeadingIcon = null;
+            this.txtRegisterUsername.Location = new System.Drawing.Point(163, 141);
+            this.txtRegisterUsername.MaxLength = 100;
+            this.txtRegisterUsername.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtRegisterUsername.Name = "txtRegisterUsername";
+            this.txtRegisterUsername.PasswordChar = '\0';
+            this.txtRegisterUsername.PrefixSuffixText = null;
+            this.txtRegisterUsername.ReadOnly = false;
+            this.txtRegisterUsername.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtRegisterUsername.SelectedText = "";
+            this.txtRegisterUsername.SelectionLength = 0;
+            this.txtRegisterUsername.SelectionStart = 0;
+            this.txtRegisterUsername.ShortcutsEnabled = true;
+            this.txtRegisterUsername.Size = new System.Drawing.Size(360, 48);
+            this.txtRegisterUsername.TabIndex = 0;
+            this.txtRegisterUsername.TabStop = false;
+            this.txtRegisterUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtRegisterUsername.TrailingIcon = null;
+            this.txtRegisterUsername.UseSystemPasswordChar = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.BackgroundImage = global::Taxi.Properties.Resources.taxi_auth_96;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(279, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // AuthWindow
             // 
