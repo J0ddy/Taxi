@@ -125,7 +125,7 @@
             this.btnHome.Name = "btnHome";
             this.btnHome.NoAccentTextColor = System.Drawing.Color.Empty;
             this.btnHome.Size = new System.Drawing.Size(82, 36);
-            this.btnHome.TabIndex = 11;
+            this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Начало";
             this.btnHome.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnHome.UseAccentColor = true;
@@ -147,7 +147,7 @@
             this.btnCompanyInfo.Name = "btnCompanyInfo";
             this.btnCompanyInfo.NoAccentTextColor = System.Drawing.Color.Empty;
             this.btnCompanyInfo.Size = new System.Drawing.Size(172, 36);
-            this.btnCompanyInfo.TabIndex = 8;
+            this.btnCompanyInfo.TabIndex = 4;
             this.btnCompanyInfo.Text = "Данни за Фирмата";
             this.btnCompanyInfo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnCompanyInfo.UseAccentColor = true;
@@ -169,7 +169,7 @@
             this.btnCarInfo.Name = "btnCarInfo";
             this.btnCarInfo.NoAccentTextColor = System.Drawing.Color.Empty;
             this.btnCarInfo.Size = new System.Drawing.Size(201, 36);
-            this.btnCarInfo.TabIndex = 9;
+            this.btnCarInfo.TabIndex = 3;
             this.btnCarInfo.Text = "Данни за Автомобила";
             this.btnCarInfo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnCarInfo.UseAccentColor = true;
@@ -191,7 +191,7 @@
             this.btnNewTrip.Name = "btnNewTrip";
             this.btnNewTrip.NoAccentTextColor = System.Drawing.Color.Empty;
             this.btnNewTrip.Size = new System.Drawing.Size(143, 36);
-            this.btnNewTrip.TabIndex = 7;
+            this.btnNewTrip.TabIndex = 1;
             this.btnNewTrip.Text = "Ново Пътуване";
             this.btnNewTrip.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnNewTrip.UseAccentColor = true;
@@ -212,7 +212,7 @@
             this.btnRemoveTrip.Name = "btnRemoveTrip";
             this.btnRemoveTrip.NoAccentTextColor = System.Drawing.Color.Empty;
             this.btnRemoveTrip.Size = new System.Drawing.Size(184, 36);
-            this.btnRemoveTrip.TabIndex = 10;
+            this.btnRemoveTrip.TabIndex = 2;
             this.btnRemoveTrip.Text = "Премахни Пътуване";
             this.btnRemoveTrip.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnRemoveTrip.UseAccentColor = true;
