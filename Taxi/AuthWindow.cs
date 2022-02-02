@@ -35,17 +35,44 @@ namespace Taxi
         private string AuthErrorParse(string error)
         {
             string? errorMessage = null;
-            if (error == "username_invalid") errorMessage = "Invalid Username";
-            else if (error == "user_invalid") errorMessage = "Invalid Username/Email";
-            else if (error == "username_exists") errorMessage = "Username Exists";
-            else if (error == "email_exists") errorMessage = "Email Exists";
-            else if (error == "email_invalid") errorMessage = "Invalid Email";
-            else if (error == "password_mismatch") errorMessage = "Passwords don't match";
-            else if (error == "password_short") errorMessage = "Password too short";
-            else if (error == "company_invalid") errorMessage = "Invalid Company";
-            else if (error == "company_exists") errorMessage = "Company Exists";
-            else if (error == "database_error") errorMessage = "Database Error";
-            else if (string.IsNullOrWhiteSpace(errorMessage)) throw new ArgumentNullException(paramName: error);
+            switch (error)
+            {
+                case "username_invalid":
+                    errorMessage = "Invalid Username";
+                    break;
+                case "user_invalid":
+                    errorMessage = "Invalid Username/Email";
+                    break;
+                case "username_exists":
+                    errorMessage = "Username Exists";
+                    break;
+                case "email_exists":
+                    errorMessage = "Email Exists";
+                    break;
+                case "email_invalid":
+                    errorMessage = "Invalid Email";
+                    break;
+                case "password_mismatch":
+                    errorMessage = "Passwords don't match";
+                    break;
+                case "password_short":
+                    errorMessage = "Password too short";
+                    break;
+                case "company_invalid":
+                    errorMessage = "Invalid Company";
+                    break;
+                case "company_exists":
+                    errorMessage = "Company Exists";
+                    break;
+                case "database_error":
+                    errorMessage = "Database Error";
+                    break;
+                default:
+                {
+                    if (string.IsNullOrWhiteSpace(errorMessage)) throw new ArgumentNullException(paramName: error);
+                    break;
+                }
+            }
             return errorMessage;
         }
 
