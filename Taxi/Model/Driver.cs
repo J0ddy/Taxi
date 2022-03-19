@@ -1,27 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Taxi.Model
+namespace Taxi.Data.Models
 {
-    internal class Driver : IUser
+    public partial class Driver
     {
-        private string _password;
-        public int Id { get; set; }
-        public string UserName { get; set; }
-
-        //TODO: Handle Hashed Password Securely
-        string IUser.Password
+        public Driver()
         {
-            get => _password;
-            set => _password = value;
+            Trips = new HashSet<Trip>();
+            User = new HashSet<User>();
         }
 
-        public string Email { get; set; }
-        public string FistName { get; set; }
-        public string LastName { get; set; }
+        public Driver(int driverId, int carId, int userId, string firstname, string lastname, string telephoneNumber)
+        {
+            this.DriverId = driverId;
+            this.CarId = carId;
+            this.UserId = userId;
+            this.Firstname = firstname;
+            this.Lastname = lastname;
+            this.TelephoneNumber = telephoneNumber;
+        }
+
+        public int DriverId { get; set; }
+        public int CarId { get; set; }
+        public int UserId { get; set; }
+        public string Firstname { get; set; }
+        public string Lastname { get; set; }
+        public string TelephoneNumber { get; set; }
+
+        public virtual Car Car { get; set; }
+        public virtual ICollection<Trip> Trips { get; set; }
+        public virtual ICollection<User> User { get; set; }
     }
 }
