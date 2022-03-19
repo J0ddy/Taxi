@@ -10,6 +10,17 @@ namespace Taxi.Data
 {
     class UserData
     {
+
+        public void Register(string username, string email, string password, string comapnyName, string telephoneNumber,)
+        {
+            //TODO: Check if Company exists
+            Company company = new Company();
+            Engine engine = new Engine();
+            Car car = new Car();
+            Driver driver = new Driver();
+            User user = new User();
+        }
+
         public List<User> GetAll()
         {
             var usersList = new List<User>();
