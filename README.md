@@ -1,27 +1,8 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![GNU Affero General Public License v3.0][license-shield]][license-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -33,7 +14,6 @@
   <h3 align="center">Taxi</h3>
 
   <p align="center">
-    Description here
     <br />
     <a href="https://github.com/J0ddy/Taxi/docs/"><strong>Documentation »</strong></a>
     <br />
@@ -79,54 +59,46 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Taxi Screen Shot][product-screenshot]](https://github.com/J0ddy/Taxi)
+Проектът ни е да създадем програма, с конзолен интерфейс, с която да е прототип на софтуер, който да помага на таксиметровия бранш.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+### ЕТАПИ В РЕАЛИЗИРАНЕТО НА ПРОЕКТА
+Етапът за разработката на проекта е разделен на четири основни етапа:
+-	Планиране – поставяне на основната идея на програмата;
+-	Проектиране – разпределяне на ролите и поставяне на крайните срокове;
+-	Реализация – практическа реализация на проекта; 
+-	Представяне – писане на документация, представяне на проекта и отчитане на дейностите по него;
 
-* Sodales ut eu sem integer vitae justo. Rutrum quisque non tellus orci ac auctor augue. 
-* Nibh sed pulvinar proin gravida hendrerit. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris.
-* Egestas congue quisque egestas diam in arcu cursus euismod. Lectus magna fringilla urna porttitor rhoncus dolor.
 
 ### Built With
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [C#](https://dotnet.microsoft.com/en-us/)
-* TODO...
-
-
+* [SQL Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+- Download the project
+- Setup the Database
 
 ### Prerequisites
 
-* TODO...
+* SQLMS
 
 ### Installation
 
 1. Download
-2. Install
-3. Run
-
-
+2. Setup the Database
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere morbi leo.
-
-_For more examples, please refer to the [Documentation](https://github.com/J0ddy/Taxi/docs/)_
-
-
+Проектът е създаден с лесен конзолен интерфейс, с когото потребителя може да реализира функциите на програмата: да получава информация за всяка регистрирана фирма, да получава информация за всеки автомобил и други лесно достъпни действия, които потребителят може да извърши. Програмата може да бъде прототип за софтуери, изработени специално за таксиметрови фирми и за останалата част от транспортния сектор. За използването ѝ са използвани Visual Studio и SQL Management Studio.
 
 <!-- ROADMAP -->
 ## Roadmap
 
 See the [open issues](https://github.com/J0ddy/Taxi/issues) for a list of proposed features (and known issues).
-
 
 
 <!-- CONTRIBUTING -->
@@ -147,13 +119,10 @@ Contributions are what make the open source community such an amazing place to b
 
 Distributed under the GNU Affero General Public License v3.0. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
 ## Contact
 
 John - https://github.com/J0ddy - me@joddy.dev
-TODO Others...
 
 Project Link: [https://github.com/J0ddy/Taxi](https://github.com/J0ddy/Taxi)
 
@@ -161,9 +130,16 @@ Project Link: [https://github.com/J0ddy/Taxi](https://github.com/J0ddy/Taxi)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Img Shields](https://shields.io)
+* [Img Shields](https://shields.io/)
 * [Choose an Open Source License](https://choosealicense.com)
 * [Icons8](https://icons8.com/)
+* [slidesgo](https://slidesgo.com/)
+* [passwordsgenerator.net](https://passwordsgenerator.net/)
+* [randommer.io](https://randommer.io/Phone)
+* [thestoryshack.com tools](https://thestoryshack.com/tools/bulgarian-name-generator/)
+* [car.info](https://www.car.info/)
+* [Google Maps](https://www.google.com/maps)
+* [numbergenerator.org](https://numbergenerator.org/random-4-digit-number-generator)
 
 
 
@@ -179,4 +155,3 @@ Project Link: [https://github.com/J0ddy/Taxi](https://github.com/J0ddy/Taxi)
 [issues-url]: https://github.com/J0ddy/Taxi/issues
 [license-shield]: https://img.shields.io/github/license/J0ddy/Taxi.svg?style=for-the-badge
 [license-url]: https://github.com/J0ddy/Taxi/blob/master/LICENSE.md
-[product-screenshot]: images/screenshot.png
