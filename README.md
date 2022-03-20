@@ -14,7 +14,6 @@
   <h3 align="center">Taxi</h3>
 
   <p align="center">
-    Description here
     <br />
     <a href="https://github.com/J0ddy/Taxi/docs/"><strong>Documentation »</strong></a>
     <br />
