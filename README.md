@@ -59,8 +59,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Taxi Screen Shot][product-screenshot]](https://github.com/J0ddy/Taxi)
-
 Проектът ни е да създадем програма, с конзолен интерфейс, с която да е прототип на софтуер, който да помага на таксиметровия бранш.
 
 ### ЕТАПИ В РЕАЛИЗИРАНЕТО НА ПРОЕКТА
@@ -132,7 +130,7 @@ Project Link: [https://github.com/J0ddy/Taxi](https://github.com/J0ddy/Taxi)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Img Shields](https://shields.io
+* [Img Shields](https://shields.io/)
 * [Choose an Open Source License](https://choosealicense.com)
 * [Icons8](https://icons8.com/)
 * [slidesgo](https://slidesgo.com/)
@@ -157,4 +155,3 @@ Project Link: [https://github.com/J0ddy/Taxi](https://github.com/J0ddy/Taxi)
 [issues-url]: https://github.com/J0ddy/Taxi/issues
 [license-shield]: https://img.shields.io/github/license/J0ddy/Taxi.svg?style=for-the-badge
 [license-url]: https://github.com/J0ddy/Taxi/blob/master/LICENSE.md
-[product-screenshot]: images/screenshot.png
