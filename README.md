@@ -4,6 +4,7 @@
 [![Issues][issues-shield]][issues-url]
 [![GNU Affero General Public License v3.0][license-shield]][license-url]
 
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -83,7 +84,7 @@ This section should list any major frameworks that you built your project using.
 
 ### Prerequisites
 
-* SQLMS
+* Microsoft SQL Management Studio (SSMS)
 
 ### Installation
 
@@ -127,7 +128,6 @@ John - https://github.com/J0ddy - me@joddy.dev
 Project Link: [https://github.com/J0ddy/Taxi](https://github.com/J0ddy/Taxi)
 
 
-
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Img Shields](https://shields.io/)
@@ -140,7 +140,6 @@ Project Link: [https://github.com/J0ddy/Taxi](https://github.com/J0ddy/Taxi)
 * [car.info](https://www.car.info/)
 * [Google Maps](https://www.google.com/maps)
 * [numbergenerator.org](https://numbergenerator.org/random-4-digit-number-generator)
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
