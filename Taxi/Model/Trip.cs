@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Taxi.Data.Models
 {
-    public partial class Trip
+    public  class Trip
     {
         public int TripId { get; set; }
         public int DriverId { get; set; }
@@ -11,17 +11,19 @@ namespace Taxi.Data.Models
         public int CompanyId { get; set; }
         public int TripTypeId { get; set; }
 
-        public Trip(int tripId, int driverId, int companyId, int tripTypeId)
+        public Trip(int tripId, int driverId, int carId, 
+        int companyId, int tripTypeId)
         {
             this.TripId = tripId;
             this.DriverId = driverId;
+            this.CarId = carId;
             this.CompanyId = companyId;
             this.TripTypeId = tripTypeId;
         }
 
-        public virtual Car Car { get; set; }
-        public virtual Company Company { get; set; }
-        public virtual Driver Driver { get; set; }
-        public virtual TripType Triptype { get; set; }
+        public  Car Car { get; set; }
+        public  Company Company { get; set; }
+        public  Driver Driver { get; set; }
+        public  TripType Triptype { get; set; }
     }
 }

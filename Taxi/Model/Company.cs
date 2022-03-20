@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Taxi.Data.Models
 {
-    public partial class Company
+    public  class Company
     {
         public Company()
         {
@@ -25,8 +25,8 @@ namespace Taxi.Data.Models
         public int AdminId { get; set; }
         public string TelephoneNumber { get; set; }
 
-        public virtual ICollection<Car> Cars { get; set; }
-        public virtual ICollection<Trip> Trips { get; set; }
-        public virtual ICollection<User> User { get; set; }
+        public  ICollection<Car> Cars { get; set; }
+        public  ICollection<Trip> Trips { get; set; }
+        public  ICollection<User> User { get; set; }
     }
 }

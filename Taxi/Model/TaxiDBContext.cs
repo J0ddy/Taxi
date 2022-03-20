@@ -4,25 +4,22 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Taxi.Data.Models
 {
-    public partial class TaxiDBContext : DbContext
+    public  class TaxiDBContext : DbContext
     {
         public TaxiDBContext()
         {
         }
 
-        public TaxiDBContext(DbContextOptions<TaxiDBContext> options)
-            : base(options)
-        {
-        }
+        public TaxiDBContext(DbContextOptions<TaxiDBContext> options) : base(options) { }
 
-        public virtual DbSet<CarOptions> Caroptions { get; set; }
-        public virtual DbSet<Car> Cars { get; set; }
-        public virtual DbSet<Company> Company { get; set; }
-        public virtual DbSet<Driver> Driver { get; set; }
-        public virtual DbSet<Engine> Engine { get; set; }
-        public virtual DbSet<Trip> Trips { get; set; }
-        public virtual DbSet<TripType> Triptype { get; set; }
-        public virtual DbSet<User> User { get; set; }
+        public DbSet<CarOptions> Caroptions { get; set; }
+        public  DbSet<Car> Cars { get; set; }
+        public  DbSet<Company> Company { get; set; }
+        public  DbSet<Driver> Driver { get; set; }
+        public  DbSet<Engine> Engine { get; set; }
+        public  DbSet<Trip> Trips { get; set; }
+        public DbSet<TripType> Triptype { get; set; }
+        public DbSet<User> User { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Taxi.Data.Models;
 
 namespace Taxi.Data
@@ -16,7 +12,7 @@ namespace Taxi.Data
             using (var connection = Database.GetConnection())
             {
                 var command = new SqlCommand(
-                    "SELECT driver.driver_id, driver.car_id, driver.user_id, driver.firstname, driver.lastname, driver.telephone_numebr FROM driver",
+                    "SELECT driver.driver_id, driver.car_id, driver.user_id, driver.firstname, driver.lastname, driver.telephone_number FROM driver",
                     connection);
                 connection.Open();
                 using (var reader = command.ExecuteReader())

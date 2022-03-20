@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Taxi.Data.Models
 {
-    public partial class CarOptions
+    public  class CarOptions
     {
         public CarOptions()
         {
@@ -33,6 +33,6 @@ namespace Taxi.Data.Models
             this.EngineMode = engineMode;
         }
 
-        public virtual ICollection<Car> Cars { get; set; }
+        public  ICollection<Car> Cars { get; set; }
     }
 }

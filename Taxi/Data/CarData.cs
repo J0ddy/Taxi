@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Taxi.Data.Models;
 
 namespace Taxi.Data
@@ -50,7 +46,7 @@ namespace Taxi.Data
             Car car = null;
             using (var connection = Database.GetConnection())
             {
-                var command = new SqlCommand("SELECT * FROM cars WHERE cars_id=@id", connection);
+                var command = new SqlCommand("SELECT * FROM cars WHERE car_id=@id", connection);
                 command.Parameters.AddWithValue("id", carsId);
                 connection.Open();
                 using (var reader = command.ExecuteReader())
@@ -127,7 +123,7 @@ namespace Taxi.Data
         {
             using (var connection = Database.GetConnection())
             {
-                var command = new SqlCommand("DELETE cars WHERE cars_id=@carsId", connection);
+                var command = new SqlCommand("DELETE cars WHERE car_id=@carsId", connection);
                 command.Parameters.AddWithValue("carsId", carsId);
                 connection.Open();
                 command.ExecuteNonQuery();

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Taxi.Data.Models
 {
-    public partial class Engine
+    public  class Engine
     {
         public Engine()
         {
@@ -13,6 +13,14 @@ namespace Taxi.Data.Models
         public Engine(int engineId, int cub, int cylinders, string fuel, int kmToLitre)
         {
             this.EngineId = engineId;
+            this.Cub = cub;
+            this.Cylinders = cylinders;
+            this.Fuel = fuel;
+            this.Kmtolitre = kmToLitre;
+        }
+
+        public Engine(int cub, int cylinders, string fuel, int kmToLitre)
+        {
             this.Cub = cub;
             this.Cylinders = cylinders;
             this.Fuel = fuel;
@@ -32,6 +40,6 @@ namespace Taxi.Data.Models
         public string Fuel { get; set; }
         public int Kmtolitre { get; set; }
 
-        public virtual ICollection<Car> Cars { get; set; }
+        public  ICollection<Car> Cars { get; set; }
     }
 }

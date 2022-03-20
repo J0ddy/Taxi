@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Taxi.Data.Models
 {
-    public partial class Car
+    public class Car
     {
         public Car()
         {
@@ -23,6 +23,19 @@ namespace Taxi.Data.Models
             this.EngineId = engineId;
             this.CaroptionsId = carOptionsId;
         }
+
+        public Car(string license, string make, string model, string color, int companyId, string year, int engineId, int carOptionsId)
+        {
+            this.License = license;
+            this.Make = make;
+            this.Model = model;
+            this.Color = color;
+            this.CompanyId = companyId;
+            this.Year = year;
+            this.EngineId = engineId;
+            this.CaroptionsId = carOptionsId;
+        }
+
         public int CarId { get; set; }
         public string License { get; set; }
         public string Make { get; set; }
@@ -33,10 +46,10 @@ namespace Taxi.Data.Models
         public int EngineId { get; set; }
         public int CaroptionsId { get; set; }
 
-        public virtual CarOptions Caroptions { get; set; }
-        public virtual Company Company { get; set; }
-        public virtual Engine Engine { get; set; }
-        public virtual ICollection<Driver> Driver { get; set; }
-        public virtual ICollection<Trip> Trips { get; set; }
+        public  CarOptions Caroptions { get; set; }
+        public  Company Company { get; set; }
+        public  Engine Engine { get; set; }
+        public  ICollection<Driver> Driver { get; set; }
+        public  ICollection<Trip> Trips { get; set; }
     }
 }

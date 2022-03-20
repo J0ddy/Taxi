@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Taxi.Data.Models
 {
-    public partial class TripType
+    public  class TripType
     {
         public TripType()
         {
@@ -23,6 +23,6 @@ namespace Taxi.Data.Models
         public string Origin { get; set; }
         public string Destination { get; set; }
 
-        public virtual ICollection<Trip> Trips { get; set; }
+        public  ICollection<Trip> Trips { get; set; }
     }
 }

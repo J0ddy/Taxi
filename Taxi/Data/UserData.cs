@@ -1,33 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Taxi.Data.Models;
 
 namespace Taxi.Data
 {
     class UserData
-    {
-
-        public void Register(string username, string email, string password, string comapnyName, string telephoneNumber,)
-        {
-            //TODO: Check if Company exists
-            Company company = new Company();
-            Engine engine = new Engine();
-            Car car = new Car();
-            Driver driver = new Driver();
-            User user = new User();
-        }
-
+    { 
         public List<User> GetAll()
         {
             var usersList = new List<User>();
             using (var connection = Database.GetConnection())
             {
                 var command = new SqlCommand(
-                    "SELECT user.user_id, user.user_name, user.email, user.password, user.driver_id, user.company_id FROM user",
+                    "SELECT user_id, user_name, email, password, driver_id, company_id FROM users",
                     connection);
                 connection.Open();
                 using (var reader = command.ExecuteReader())
@@ -58,7 +43,7 @@ namespace Taxi.Data
             User user = null;
             using (var connection = Database.GetConnection())
             {
-                var command = new SqlCommand("SELECT * FROM driver WHERE driver_id=@id", connection);
+                var command = new SqlCommand("SELECT * FROM users WHERE user_id=@id", connection);
                 command.Parameters.AddWithValue("id", userId);
                 connection.Open();
                 using (var reader = command.ExecuteReader())
@@ -86,12 +71,12 @@ namespace Taxi.Data
             {
                 var command =
                     new SqlCommand(
-                        "INSERT INTO user (user_id, user_name, email, password, driver_id, company_id) VALUES(@userId, @userName, @email, @password, @driverId, @companyId)",
+                        "INSERT INTO user (user_id, user_name,password, email, driver_id, company_id) VALUES(@userId, @userName, @email, @driverId, @companyId)",
                         connection);
                 command.Parameters.AddWithValue("userId", user.UserId);
                 command.Parameters.AddWithValue("userName", user.UserName);
-                command.Parameters.AddWithValue("email", user.Email);
                 command.Parameters.AddWithValue("password", user.Password);
+                command.Parameters.AddWithValue("email", user.Email);
                 command.Parameters.AddWithValue("driverId", user.DriverId);
                 command.Parameters.AddWithValue("companyId", user.CompanyId); 
 
@@ -107,14 +92,14 @@ namespace Taxi.Data
             {
                 var command =
                     new SqlCommand(
-                        "UPDATE user SET user_id=@userId, user_name=@userName, email=@email, password=@password, driver_id=@driverId WHERE company_id=@driverId",
+                        "UPDATE user SET user_id=@userId, user_name=@userName, password=@password email=@email, password=@password, driver_id=@driverId WHERE company_id=@driverId",
                         connection);
-                command.Parameters.AddWithValue("driverId", user.UserId);
-                command.Parameters.AddWithValue("carId", user.UserName);
-                command.Parameters.AddWithValue("userId", user.Email);
-                command.Parameters.AddWithValue("fistName", user.Password);
-                command.Parameters.AddWithValue("lastName", user.DriverId);
-                command.Parameters.AddWithValue("telephoneNumber", user.CompanyId);
+                command.Parameters.AddWithValue("userId", user.UserId);
+                command.Parameters.AddWithValue("userName", user.UserName);
+                command.Parameters.AddWithValue("password", user.Password);
+                command.Parameters.AddWithValue("email", user.Email);
+                command.Parameters.AddWithValue("driverId", user.DriverId);
+                command.Parameters.AddWithValue("companyId", user.CompanyId);
 
                 connection.Open();
                 command.ExecuteNonQuery();

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Taxi.Data.Models;
 
 namespace Taxi.Data
@@ -27,7 +23,8 @@ namespace Taxi.Data
                             reader.GetInt32(0),
                             reader.GetInt32(1),
                             reader.GetInt32(2),
-                            reader.GetInt32(3)
+                            reader.GetInt32(3),
+                            reader.GetInt32(4)
                         );
 
                         tripsList.Add(trip);
@@ -55,7 +52,8 @@ namespace Taxi.Data
                             reader.GetInt32(0),
                             reader.GetInt32(1),
                             reader.GetInt32(2),
-                            reader.GetInt32(3)
+                            reader.GetInt32(3),
+                            reader.GetInt32(4)
                         );
                 }
 

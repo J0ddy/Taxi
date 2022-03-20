@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Taxi.Data.Models;
 
 namespace Taxi.Data
@@ -12,11 +8,11 @@ namespace Taxi.Data
     {
         public List<Company> GetAll()
         {
-            var driversList = new List<Company>();
+            var companyList = new List<Company>();
             using (var connection = Database.GetConnection())
             {
                 var command = new SqlCommand(
-                    "SELECT company.driver_id, company.car_id, company.user_id, company.firstname, company.lastname, company.telephone_numebr FROM company",
+                    "SELECT company.company_id, company.name, company.admin_id, company.telephone_number FROM company",
                     connection);
                 connection.Open();
                 using (var reader = command.ExecuteReader())
@@ -30,14 +26,14 @@ namespace Taxi.Data
                             reader.GetString(3)
                         );
 
-                        driversList.Add(company);
+                        companyList.Add(company);
                     }
                 }
 
                 connection.Close();
             }
 
-            return driversList;
+            return companyList;
         }
 
         public Company Get(int companyId)
@@ -45,8 +41,33 @@ namespace Taxi.Data
             Company company = null;
             using (var connection = Database.GetConnection())
             {
-                var command = new SqlCommand("SELECT * FROM driver WHERE driver_id=@id", connection);
+                var command = new SqlCommand("SELECT * FROM company WHERE company_id=@id", connection);
                 command.Parameters.AddWithValue("id", companyId);
+                connection.Open();
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                        company = new Company(
+                            reader.GetInt32(0),
+                            reader.GetString(1),
+                            reader.GetInt32(2),
+                            reader.GetString(3)
+                        );
+                }
+
+                connection.Close();
+            }
+
+            return company;
+        }
+
+        public Company Get(string name)
+        {
+            Company company = null;
+            using (var connection = Database.GetConnection())
+            {
+                var command = new SqlCommand("SELECT * FROM company WHERE name=@name", connection);
+                command.Parameters.AddWithValue("name", name);
                 connection.Open();
                 using (var reader = command.ExecuteReader())
                 {
@@ -77,8 +98,6 @@ namespace Taxi.Data
                 command.Parameters.AddWithValue("name", company.Name);
                 command.Parameters.AddWithValue("adminId", company.AdminId);
                 command.Parameters.AddWithValue("telephoneNumber", company.TelephoneNumber);
-                //command.Parameters.AddWithValue("lastName", driver.Lastname);
-                //command.Parameters.AddWithValue("telephoneNumber", driver.TelephoneNumber);
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -92,14 +111,12 @@ namespace Taxi.Data
             {
                 var command =
                     new SqlCommand(
-                        "UPDATE user SET company_id=@companyId, name=@name, admin_id=@adminId, lastname=@lastName, telephone_number=@telephoneNumber WHERE driver_id=@driverId",
+                        "UPDATE company SET company_id=@companyId, name=@name, admin_id=@adminId, lastname=@lastName, telephone_number=@telephoneNumber WHERE company_id=@companyId",
                         connection);
                 command.Parameters.AddWithValue("companyId", company.CompanyId);
                 command.Parameters.AddWithValue("name", company.Name);
                 command.Parameters.AddWithValue("adminId", company.AdminId);
                 command.Parameters.AddWithValue("telephoneNumber", company.TelephoneNumber);
-                //command.Parameters.AddWithValue("lastName", driver.Lastname);
-                //command.Parameters.AddWithValue("telephoneNumber", driver.TelephoneNumber);
 
                 connection.Open();
                 command.ExecuteNonQuery();
@@ -111,8 +128,8 @@ namespace Taxi.Data
         {
             using (var connection = Database.GetConnection())
             {
-                var command = new SqlCommand("DELETE driver WHERE driver_id=@driverId", connection);
-                command.Parameters.AddWithValue("comapnyId", companyId);
+                var command = new SqlCommand("DELETE company WHERE company_id=@companyId", connection);
+                command.Parameters.AddWithValue("companyId", companyId);
                 connection.Open();
                 command.ExecuteNonQuery();
                 connection.Close();
